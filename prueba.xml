@@ -8,6 +8,12 @@
         </root>
         <!-- Puede haber indefinidos-->
         <no_root>
+            <nombre></nombre>
+            <apellidos></apellidos>
+            <direccion></direccion>
+            <poblacion></poblacion>
+            <provincia></provincia>
+            <email></email>
             <usuario></usuario>
             <contrasenya></contrasenya>
         </no_root>

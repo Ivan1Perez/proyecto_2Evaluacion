@@ -10,14 +10,17 @@
 
 	<?php
         $carga_xml = simplexml_load_file("../prueba.xml");
-		$nombre = $_POST["nombre"];
-		$apellidos = $_POST["apellidos"];
-		$direccion = $_POST["direccion"];
-		$poblacion = $_POST["poblacion"];
-		$provincia = $_POST["provincia"];
-		$email = $_POST["email"];
-		$usuario = $_POST["usuario"];
-		$contraseña = $_POST["contraseña"];
+		$no_root = $xml->usuarios->addChild('no_root');
+
+		$no_root->addChild('nombre', $_POST['nombre']);
+		$no_root->addChild('apellidos', $_POST['apellidos']);
+		$no_root->addChild('direccion', $_POST['direccion']);
+		$no_root->addChild('poblacion', $_POST['poblacion']);
+		$no_root->addChild('provincia', $_POST['provincia']);
+		$no_root->addChild('email', $_POST['email']);
+		$no_root->addChild('usuario', $_POST['usuario']);
+		$no_root->addChild('contrasenya', $_POST['contrasenya']);
+
 	?>
 	<div id="full_container">
 		<header>
