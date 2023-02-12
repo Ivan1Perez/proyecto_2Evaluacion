@@ -1,0 +1,399 @@
+@font-face {
+        font-family: 'Pacifico-Regular';
+        src: url('../../fuentes/Pacifico/Pacifico-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Playfair_Display';
+        src: url('../../fuentes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Montserrat';
+        src: url('../../fuentes/Montserrat-VariableFont_wght.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url('../../imagenes/fondo.jpg');
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+header{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#full_container {
+	height: 100vh;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 20px;
+}
+
+#headerTable{
+	width: 100%;
+	margin: 0px auto;
+	padding: 12px 0px;
+	text-align: center;
+}
+
+#logo{
+	color: white;
+	font-size: 2.8vw;
+}
+
+#logo > p{
+	font-family: 'Pacifico-Regular';
+}
+
+#logo > img{
+	width: 100%;
+	border-radius: 4px;
+}
+
+#menu{
+	display: flex;
+	background-color: whitesmoke;
+	border-radius: 6px;
+	padding: 10px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.alojamientos {
+	border: 2px solid #0071c2;
+	display: flex;
+	border: 2px solid #0071c2;
+	border-radius: 30px;
+	padding: 10px;
+	margin-right: 20px;
+	color: black;
+	align-items: center;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+
+.alojamientos:hover{
+	color: white;
+	background-color: #0071c2;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.alojamientos p {
+	text-align: center;
+}
+
+.otros{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 10px 0px;
+	margin-right: 20px;
+	color: black;
+	align-items: center;
+	transition: all 200ms ease;
+}
+
+.otros:hover{
+	background-color: #0071c2;
+	display: flex;
+	border-radius: 30px;
+	padding: 0px 10px;
+	align-items: center;
+	margin-right: 20px;
+	color: white;
+}
+
+.volver {
+	background-color: white;
+	padding: 10px 20px;
+	color: #0071c2;
+	border-radius: 4px;
+	font-family: sans-serif;
+	text-decoration: none;
+	/* box-shadow: inset 2px 2px 0px white, inset -2px -2px 0px #ffffff85; */
+	transition: all 50ms;
+	border: 2px solid #0071c2;
+}
+
+.volver:hover{
+	background-color: white;
+	border: 2px solid #0071c2;
+	padding: 12px 22px;
+	color: #0071c2;
+	box-shadow: none;
+	font-size: 18px;
+}
+
+main{
+	padding: 20px;
+	border-radius: 10px;
+	background-color: whitesmoke;
+}
+
+#enunciado{
+	width: 340px;
+}
+
+#enunciado h1{
+	border-radius: 0px 30px 0px 30px;
+	background-color: #0071c2;
+	transition: all 200ms;
+	color: white;
+	text-align: center;
+}
+
+
+#contenedor-hoteles{
+	padding: 20px;
+}
+
+.contenido-hoteles {
+	display: flex; 
+	/* justify-content: safe center; */
+	padding: 20px;
+	background: white;
+	border-radius: 6px;
+	box-shadow: 2px 2px 4px #0000ffb3;
+}
+
+a[class*="img-hotel"]{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 200px;
+	height: 200px;
+	border-radius: 6px;
+	text-align: right;
+	transition: all 200ms;
+}
+
+.img-hotel1{
+	background-image: url('../../imagenes/hotel_bcn1.webp');
+}
+
+.img-hotel2{
+	background-image: url('../../imagenes/hotelbcn2.webp');
+}
+
+.img-hotel3{
+	background-image: url('../../imagenes/hotelbcn3.webp');
+}
+
+a[class*="img-hotel"]:hover{
+	box-shadow: 2px 2px 4px #0000ffb3, -2px -2px 4px #0000ffb3;
+}
+
+.corazon{
+	width: 35px;
+	margin: 5px;
+	transition: all 200ms;
+}
+
+.corazon:hover{
+	width: 40px;
+	margin: 5px;
+	background-color: pink;
+	border-radius: 50px;
+}
+
+/*INICIO DESCRIPCIÓN*/
+
+.descripcion-hoteles{
+	padding: 0px 20px;
+	width: 60%;
+}
+
+.descripcion-hoteles h2{
+	color: #0071c2;
+	transition: all 100ms;
+}
+
+.descripcion-hoteles h2:hover{
+	color: orange;
+}
+
+.descripcion-hoteles > p{
+	padding-top: 10px;
+	font-family: sans-serif;
+}
+
+.enlaces-hotel:hover{
+	color: #000053;
+}
+
+/*FIN DESCRIPCIÓN*/
+
+/*INICIO PUNTUACIÓN*/
+
+.caja-puntuacion{
+	display: flex;
+	margin: 20px 0px;
+	font-family: sans-serif;
+}
+
+.titulo-puntuacion{
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	background-color: #0071c2;
+	border-radius: 6px 0px 0px 6px;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.puntuacion{
+	padding: 10px;
+	background-color: #003580;
+	border-radius: 0px 0px 6px 0px;
+	color: white;
+	cursor: pointer;
+}
+
+.puntuacion-texto {
+	font-size: 20px;
+	margin: auto 20px;
+}
+/*FIN PUNTUACIÓN*/
+
+/*INICIO MOSTRAR PRECIO*/
+
+.contenedor-precio {
+	position: relative;
+	/* left: 90px; */
+	/* width: 200px; */
+	margin-left: auto;
+}
+
+.modal {
+	position: relative;
+	/* display: flex; */
+	z-index: 2;
+	top: 0;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	padding-top: 10px;
+	justify-content: right;
+}
+
+#btn-modal1:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal2:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal3:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+.contenedor {
+	height: 105px;
+	margin: auto;
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+	border-radius: 6px;
+	transition: all 500ms ease;
+	transform: translateY(-20%);
+}
+
+#btn-modal1:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal2:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal3:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+.contenedor p {
+	padding: 10px;
+	background-color: #db8046;
+	color: white;
+	text-align: left;
+}
+
+.contenedor label {
+	position: relative;
+	top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 2px 4px;
+}
+
+#btn-modal1{
+	display: none;
+}
+
+#btn-modal2{
+	display: none;
+}
+
+#btn-modal3{
+	display: none;
+}
+
+.mostrar-precio {
+	padding: 10px;
+	background: #0071c2;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	cursor: pointer;
+	width: 120px;
+	display: block;
+}
+
+.mostrar-precio:hover{
+	background-color: #00487a;
+}
+
+.contenido{
+	margin-top: 20px;
+}
+
+.precio{
+	position: relative;
+	top: 10px;
+	background-color: #0071c2;
+	padding: 10px;
+	color: white;
+	font-family: sans-serif;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.comentarios {
+	text-align: center;
+	background-color: #003580;
+	padding: 10px 0px;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+
+/*FIN MOSTRAR PRECIO*/

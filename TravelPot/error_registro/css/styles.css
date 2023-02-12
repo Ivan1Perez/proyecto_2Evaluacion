@@ -1,0 +1,160 @@
+@font-face {
+        font-family: 'Pacifico-Regular';
+        src: url('../../fuentes/Pacifico/Pacifico-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Playfair_Display';
+        src: url('../../fuentes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Montserrat';
+        src: url('../../fuentes/Montserrat-VariableFont_wght.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url('../../imagenes/maldivas.jpg');
+	background-size: 100vw 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#full_container{
+	height: 100vh;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+header{
+	z-index: 1;
+	position: relative;
+}
+
+#headerTable{
+	width: 100%;
+	margin: 0px auto;
+	padding: 12px 0px;
+	text-align: center;
+}
+
+#logo{
+	color: white;
+	font-size: 2.8vw;
+}
+
+#logo > p{
+	font-family: 'Pacifico-Regular';
+}
+
+#logo > img{
+	width: 100%;
+	border-radius: 4px;
+}
+
+.volver {
+	background-color: #0071c2;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 4px 0px 4px 0px;
+	font-family: sans-serif;
+	text-decoration: none;
+	box-shadow: inset 2px 2px 0px white, inset -2px -2px 0px #ffffff85;
+	transition: all 50ms;
+}
+
+.volver:hover{
+	background-color: white;
+	border: 2px solid #0071c2;
+	padding: 12px 22px;
+	color: #0071c2;
+	box-shadow: none;
+	font-size: 18px;
+}
+
+.cajaReg_Ini {
+	display: block;
+	width: 110px;
+	background-color: white;
+	border: 1px solid #0071c2;
+	padding: 10px;
+	color: #0071c2;
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-left: auto;
+	/* margin: 0px auto; */
+	position: relative;
+	transition: all 50ms;
+}
+
+.cajaReg_Ini:hover{
+	padding: 15px;
+}
+
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+#form-container > div{
+	background: #000000bd;
+	margin: 0px auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+fieldset{
+	color: white;
+	text-align: center;
+	font-size: 16;
+	padding: 15px;
+	padding-bottom: 0;
+}
+
+legend{
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+fieldset p {
+	color: red;
+	font-weight: bold;
+	border: 2px solid #d2d2d2;
+	text-shadow: 1px 1px 0px black;
+	padding: 15px;
+}
+
+#ini-regist{
+	display: flex;
+	justify-content: center;
+}
+
+form{
+	padding: 10px;
+}
+
+#iniciar{
+	width: 110px;
+	margin-top: 20px;
+	background-color: #0071c2;
+	text-decoration: none;
+	border-radius: 3px;
+	color: white;
+	padding: 7px 17px;
+	border:none;
+	margin-bottom: 20px;
+	cursor: pointer;
+}

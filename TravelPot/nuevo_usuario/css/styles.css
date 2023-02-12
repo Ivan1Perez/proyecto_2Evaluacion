@@ -1,0 +1,169 @@
+@font-face {
+        font-family: 'Pacifico-Regular';
+        src: url('../../fuentes/Pacifico/Pacifico-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Playfair_Display';
+        src: url('../../fuentes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')  format('truetype');
+}
+
+@font-face {
+        font-family: 'Montserrat';
+        src: url('../../fuentes/Montserrat-VariableFont_wght.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url('../../imagenes/hotel.jpg');
+	background-size: 100vw 100%;
+	background-repeat: no-repeat;
+}
+
+#full_container{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 52px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+header{
+	z-index: 1;
+	position: relative;
+}
+
+#headerTable{
+	width: 100%;
+	margin: 0px auto;
+	padding: 12px 0px;
+	text-align: center;
+}
+
+#logo{
+	color: white;
+	font-size: 2.8vw;
+}
+
+#logo > p{
+	font-family: 'Pacifico-Regular';
+}
+
+#logo > img{
+	width: 100%;
+	border-radius: 4px;
+}
+
+.idioma{
+	position: relative;
+	background-color: #0071c2;
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	font-family: sans-serif;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.volver {
+	background-color: #0071c2;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 4px 0px 4px 0px;
+	font-family: sans-serif;
+	text-decoration: none;
+	box-shadow: inset 2px 2px 0px white, inset -2px -2px 0px #ffffff85;
+	transition: all 50ms;
+}
+
+.volver:hover{
+	background-color: white;
+	border: 2px solid #0071c2;
+	padding: 12px 22px;
+	color: #0071c2;
+	box-shadow: none;
+	font-size: 18px;
+}
+
+.cajaReg_Ini {
+	display: block;
+	width: 110px;
+	background-color: white;
+	border: 1px solid #0071c2;
+	padding: 10px;
+	color: #0071c2;
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-left: auto;
+	/* margin: 0px auto; */
+	position: relative;
+	transition: all 50ms;
+}
+
+.cajaReg_Ini:hover{
+	padding: 15px;
+}
+
+section > p{
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+}
+
+#formulario{
+	width: 60%;
+	min-width: 590px;
+	margin: 0px auto;
+	background-color: #000000bd;
+	padding-bottom: 30px;
+	border-radius: 4px;
+}
+
+#formulario > p{
+	padding: 0px 10px;
+	padding-top:30px;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 20px auto;
+}
+
+#formulario form fieldset{
+	position: relative;
+	width: 50%;
+	margin: 0px auto;
+	margin-top: 40px;
+}
+
+#formulario legend{
+	color:white;
+	font-family: sans-serif;
+	font-size:24px;
+	margin-bottom: 20px;
+}
+
+fieldset input{
+	margin-left: 20px;
+	width: calc(90% - 10px);
+}
+
+.alta{
+	width: 110px;
+	background-color: #0071c2;
+	text-decoration: none;
+	border-radius: 3px;
+	color: white;
+	padding: 7px 17px;
+	border:none;
+	margin-bottom: 20px;
+	cursor: pointer;
+}

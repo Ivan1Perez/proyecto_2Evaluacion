@@ -1,0 +1,14 @@
+body{
+	background-color: blue;
+}
+
+#logo{
+
+}
+
+#logo_esfera{
+	color: white;
+	background-color: red;
+	padding: 20px;
+	border-radius: 50%;
+}

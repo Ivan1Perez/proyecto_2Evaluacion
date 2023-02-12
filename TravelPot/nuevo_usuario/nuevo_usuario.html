@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="full_container">
+		<header>
+			<nav>
+				<table id="headerTable">
+					<tr>
+						<td style="width: 15%;">
+							<div id="logo">
+								<p><b>TravelPot</b></p>
+							</div>
+						</td>
+						<td>
+							<a href="../index_esp.html"class="volver">Volver</a>
+						</td>
+						<td style="width: 150px;">
+							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg_Ini">Iniciar sesión</a>
+						</td>
+					</tr>
+				</table>
+			</nav>
+		<main>
+			<section>
+				<p><b>FORMULARIO DE ALTA DE USUARIO</b></p>
+				<div id="formulario">
+						<p>Date de alta y empieza a disfrutar de las mejores ofertas</p>
+					<form action="../alta_correcta/alta_correcta.php" method="post">
+						<fieldset>
+		                    <legend>Datos Personales</legend>
+		                    <input type="text" name="nombre"  placeholder="Nombre">
+		                    </br>
+		                    </br>
+		                    <input type="text" name="apellidos" placeholder="Apellidos">
+		                    </br>
+		                    </br>
+		                    <input type="text" name="direccion" placeholder="Dirección">
+		                    </br>
+		                    </br>
+		                    <input type="text" name="poblacion" placeholder="Población">
+		                    </br>
+		                    </br>
+		                    <input type="text" name="provincia" placeholder="Província">
+		                    </br>
+		                    </br>
+		                    <input type="email" name="email" placeholder="Correo electrónico">
+		                    </br>
+		                    </br>
+		                    <hr>
+		                    <br>
+						    <input type="text" name="nombre" placeholder="Usuario">
+						    <br>
+						    <br>
+					        <input type="password" name="contraseña" placeholder="Contraseña">
+					        <br>
+					        <br>
+		                    <input type="submit" value="Darse de alta" class="alta">
+		                </fieldset>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

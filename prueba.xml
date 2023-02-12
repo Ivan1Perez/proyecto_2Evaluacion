@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travelpot>
+    <usuarios>
+        <!-- Solo hay uno-->
+        <root>
+            <usuario></usuario>
+            <contrasenya></contrasenya>
+        </root>
+        <!-- Puede haber indefinidos-->
+        <no_root>
+            <usuario></usuario>
+            <contrasenya></contrasenya>
+        </no_root>
+    </usuarios>
+    <hoteles>
+        <!-- Puede haber indefinidos-->
+        <hotel>
+            <nombre_hotel></nombre_hotel>
+            <ciudad></ciudad>
+            <importe_habitacion></importe_habitacion>
+        </hotel>
+    </hoteles>
+    <reservas>
+        <!-- Puede haber indefinidos-->
+        <reserva>
+            <nombre_hotel></nombre_hotel>
+            <dia_entrada></dia_entrada>
+            <dia_salida></dia_salida>
+            <nombre_reserva></nombre_reserva>
+            <importe_reserva></importe_reserva>
+        </reserva>
+    </reservas>
+</travelpot>
