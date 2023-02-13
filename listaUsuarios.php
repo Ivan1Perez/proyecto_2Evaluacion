@@ -13,11 +13,12 @@
 	<h1>LISTADO DE USUARIOS</h1>
 
 	<?php
-	$carga_xml = simplexml_load_file("../../travelpot.xml");
+	$carga_xml = simplexml_load_file("travelpot.xml");
 	$travelpot = $carga_xml->travelpot;
 
 	foreach ($travelpot->usuarios->no_root as $nodo) {
-		echo '<p>' . $nodo->attributes() . '</p>';
+		$atributo = $nodo->attributes();
+		echo '<p>' . $atributo . '</p>';
 	}
 
 	?>

@@ -62,17 +62,20 @@
 				?> -->
 
 				<?php
-					$doc = new DOMDocument();
-					$doc->load('../../travelpot.xml');
+					$doc = new DOMDocument("1.0");
+					$doc->load('/home/ivan/1ro_DAW/LenguajeDe_Marcas/proyecto_1evaluacion/travelpot.xml');
 
-					$usuarios = $doc->documentElement;
+					$travelpot = $doc->documentElement;
 
 					$no_root = $doc->createElement('no_root');
-					$nombre = $documento->createElement('nombre', $_POST['nombre']);
+
+					$nombre = $doc->createElement('nombre', $_POST['nombre']);
 
 					$no_root->appendChild($nombre);
 
-					$doc->save('../../travelpot.xml');
+					$travelpot->appendChild($no_root);
+
+					$doc->save('/home/ivan/1ro_DAW/LenguajeDe_Marcas/proyecto_1evaluacion/travelpot.xml');
 
 					echo "Fichero generado y guardado correctamente."
 				?>
