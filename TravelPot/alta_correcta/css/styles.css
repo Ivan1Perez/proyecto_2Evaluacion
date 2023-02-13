@@ -82,26 +82,6 @@ header{
 	font-size: 18px;
 }
 
-.cajaReg_Ini {
-	display: block;
-	width: 110px;
-	background-color: white;
-	border: 1px solid #0071c2;
-	padding: 10px;
-	color: #0071c2;
-	font-family: sans-serif;
-	text-decoration: none;
-	margin-left: auto;
-	/* margin: 0px auto; */
-	position: relative;
-	transition: all 50ms;
-}
-
-.cajaReg_Ini:hover{
-	padding: 15px;
-}
-
-
 main{
 	display: flex;
 	justify-content: center;

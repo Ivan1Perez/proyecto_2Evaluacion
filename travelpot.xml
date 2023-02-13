@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE travelpot SYSTEM "travelpot.dtd">
 <travelpot>
     <usuarios>
         <!-- Solo hay uno-->
@@ -9,13 +10,6 @@
         <!-- Puede haber indefinidos-->
         <no_root>
             <nombre></nombre>
-            <apellidos></apellidos>
-            <direccion></direccion>
-            <poblacion></poblacion>
-            <provincia></provincia>
-            <email></email>
-            <usuario></usuario>
-            <contrasenya></contrasenya>
         </no_root>
     </usuarios>
     <hoteles>

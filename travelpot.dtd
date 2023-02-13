@@ -1,0 +1,18 @@
+<!ELEMENT travelpot (usuarios, hoteles, reservas)>
+<!ELEMENT usuarios (root, no_root*)>
+<!ELEMENT root (usuario, contrasenya)>
+<!ELEMENT no_root (nombre)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT contrasenya (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT hoteles (hotel*)>
+<!ELEMENT hotel (nombre_hotel, ciudad, importe_habitacion)>
+<!ELEMENT nombre_hotel (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT importe_habitacion (#PCDATA)>
+<!ELEMENT reservas (reserva*)>
+<!ELEMENT reserva (nombre_hotel, dia_entrada, dia_salida, nombre_reserva, importe_reserva)>
+<!ELEMENT dia_entrada (#PCDATA)>
+<!ELEMENT dia_salida (#PCDATA)>
+<!ELEMENT nombre_reserva (#PCDATA)>
+<!ELEMENT importe_reserva (#PCDATA)>
