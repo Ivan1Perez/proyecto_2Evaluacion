@@ -42,24 +42,42 @@
 				</div>
 			</section>
 			<section>
-				<?php
-				$carga_xml = simplexml_load_file("../../travelpot.xml");
+				<!-- <?php
+				/*$carga_xml = simplexml_load_file("../../travelpot.xml");
 				$travelpot = $carga_xml->travelpot;
 
 				$no_root = $travelpot->usuarios->addChild('no_root');
 
 				$no_root->addChild('nombre', $_POST['nombre']);
-				// $no_root->addChild('apellidos', $_POST['apellidos']);
-				// $no_root->addChild('direccion', $_POST['direccion']);
-				// $no_root->addChild('poblacion', $_POST['poblacion']);
-				// $no_root->addChild('provincia', $_POST['provincia']);
-				// $no_root->addChild('email', $_POST['email']);
-				// $no_root->addChild('usuario', $_POST['usuario']);
-				// $no_root->addChild('contrasenya', $_POST['contrasenya']);
+				$no_root->addChild('apellidos', $_POST['apellidos']);
+				$no_root->addChild('direccion', $_POST['direccion']);
+				$no_root->addChild('poblacion', $_POST['poblacion']);
+				$no_root->addChild('provincia', $_POST['provincia']);
+				$no_root->addChild('email', $_POST['email']);
+				$no_root->addChild('usuario', $_POST['usuario']);
+				$no_root->addChild('contrasenya', $_POST['contrasenya']);
 
-				$carga_xml->asXML("../../travelpot.xml")
+				$carga_xml->asXML("../../travelpot.xml")*/
 
+				?> -->
+
+				<?php
+					$doc = new DOMDocument();
+					$doc->load('../../travelpot.xml');
+
+					$usuarios = $doc->documentElement;
+
+					$no_root = $doc->createElement('no_root');
+					$nombre = $documento->createElement('nombre', $_POST['nombre']);
+
+					$no_root->appendChild($nombre);
+
+					$doc->save('../../travelpot.xml');
+
+					echo "Fichero actualizado y guardado correctamente."
 				?>
+
+
 			</section>
 		</main>
 	</div>

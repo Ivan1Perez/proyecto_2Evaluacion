@@ -19,8 +19,8 @@
     <!ELEMENT dia_salida (#PCDATA)>
     <!ELEMENT nombre_reserva (#PCDATA)>
     <!ELEMENT importe_reserva (#PCDATA)>
-
 ]>
+
 <travelpot>
     <usuarios>
         <!-- Solo hay uno-->
