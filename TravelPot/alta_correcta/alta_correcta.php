@@ -74,7 +74,7 @@
 
 					$doc->save('../../travelpot.xml');
 
-					echo "Fichero actualizado y guardado correctamente."
+					echo "Fichero generado y guardado correctamente."
 				?>
 
 
