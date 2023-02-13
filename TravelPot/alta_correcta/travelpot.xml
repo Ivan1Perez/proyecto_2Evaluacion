@@ -3,11 +3,16 @@
 <!DOCTYPE travelpot [
     <!ELEMENT travelpot (usuarios, hoteles, reservas)>
     <!ELEMENT usuarios (root, no_root*)>
-    <!ELEMENT root (usuario, contrasenya)>
-    <!ELEMENT no_root (nombre)>
+    <!ELEMENT root (usuario, password)>
+    <!ELEMENT no_root (nombre,apellidos,direccion,poblacion,provincia,email,usuario,password)>
     <!ELEMENT usuario (#PCDATA)>
-    <!ELEMENT contrasenya (#PCDATA)>
+    <!ELEMENT password (#PCDATA)>
     <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
     <!ELEMENT hoteles (hotel*)>
     <!ELEMENT hotel (nombre_hotel, ciudad, importe_habitacion)>
     <!ELEMENT nombre_hotel (#PCDATA)>
@@ -26,11 +31,18 @@
         <!-- Solo hay uno-->
         <root>
             <usuario></usuario>
-            <contrasenya></contrasenya>
+            <password></password>
         </root>
         <!-- Puede haber indefinidos-->
         <no_root>
             <nombre></nombre>
+            <apellidos></apellidos>
+            <direccion></direccion>
+            <poblacion></poblacion>
+            <provincia></provincia>
+            <email></email>
+            <usuario></usuario>
+            <password></password>
         </no_root>
     </usuarios>
     <hoteles>

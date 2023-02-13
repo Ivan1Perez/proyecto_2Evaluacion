@@ -42,44 +42,48 @@
 				</div>
 			</section>
 			<section>
-				<!-- <?php
-				/*$carga_xml = simplexml_load_file("../../travelpot.xml");
-				$travelpot = $carga_xml->travelpot;
-
-				$no_root = $travelpot->usuarios->addChild('no_root');
-
-				$no_root->addChild('nombre', $_POST['nombre']);
-				$no_root->addChild('apellidos', $_POST['apellidos']);
-				$no_root->addChild('direccion', $_POST['direccion']);
-				$no_root->addChild('poblacion', $_POST['poblacion']);
-				$no_root->addChild('provincia', $_POST['provincia']);
-				$no_root->addChild('email', $_POST['email']);
-				$no_root->addChild('usuario', $_POST['usuario']);
-				$no_root->addChild('contrasenya', $_POST['contrasenya']);
-
-				$carga_xml->asXML("../../travelpot.xml")*/
-
-				?> -->
 
 				<?php
-					$doc = new DOMDocument("1.0");
-					$doc->load('/home/ivan/1ro_DAW/LenguajeDe_Marcas/proyecto_1evaluacion/travelpot.xml');
+				$nombrePost = $_POST['nombre'];
+				$apellidosPost = $_POST['apellidos'];
+				$direccionPost = $_POST['direccion'];
+				$poblacionPost = $_POST['poblacion'];
+				$provinciaPost = $_POST['provincia'];
+				$emailPost = $_POST['email'];
+				$usuarioPost = $_POST['usuario'];
+				$passwordPost = $_POST['password'];
 
-					$travelpot = $doc->documentElement;
+				$doc = new DOMDocument();
+				$doc->load('travelpot.xml');
 
-					$no_root = $doc->createElement('no_root');
+				$usuarios = $doc->getElementsByTagName('usuarios')->item(0);
 
-					$nombre = $doc->createElement('nombre', $_POST['nombre']);
+				$no_root = $doc->createElement('no_root');
 
-					$no_root->appendChild($nombre);
+				$nombre = $doc->createElement('nombre', $nombrePost);
+				$apellidos = $doc->createElement('apellidos', $apellidosPost);
+				$direccion = $doc->createElement('direccion', $direccionPost);
+				$poblacion = $doc->createElement('poblacion', $poblacionPost);
+				$provincia = $doc->createElement('provincia', $provinciaPost);
+				$email = $doc->createElement('email', $emailPost);
+				$usuario = $doc->createElement('usuario', $usuarioPost);
+				$password = $doc->createElement('password', $passwordPost);
 
-					$travelpot->appendChild($no_root);
+				$no_root->appendChild($nombre);
+				$no_root->appendChild($apellidos);
+				$no_root->appendChild($direccion);
+				$no_root->appendChild($poblacion);
+				$no_root->appendChild($provincia);
+				$no_root->appendChild($email);
+				$no_root->appendChild($usuario);
+				$no_root->appendChild($password);
 
-					$doc->save('/home/ivan/1ro_DAW/LenguajeDe_Marcas/proyecto_1evaluacion/travelpot.xml');
+				$usuarios->appendChild($no_root);
 
-					echo "Fichero generado y guardado correctamente."
+				$doc->save('travelpot.xml');
+
+				echo "Fichero generado y guardado correctamente."
 				?>
-
 
 			</section>
 		</main>
