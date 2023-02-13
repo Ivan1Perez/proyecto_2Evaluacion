@@ -44,7 +44,7 @@
 			<section>
 				<?php
 				$carga_xml = simplexml_load_file("../../travelpot.xml");
-				$travelpot = $xml->travelpot;
+				$travelpot = $carga_xml->travelpot;
 
 				$no_root = $travelpot->usuarios->addChild('no_root');
 
