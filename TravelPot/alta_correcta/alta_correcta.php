@@ -59,10 +59,7 @@
 
 				$carga_xml->asXML("../../travelpot.xml")
 
-				?> 
-				<p>FFfff</p>
-				<p>Bienvenido <?php echo $_POST['nombre']; ?></p>
-
+				?>
 			</section>
 		</main>
 	</div>
