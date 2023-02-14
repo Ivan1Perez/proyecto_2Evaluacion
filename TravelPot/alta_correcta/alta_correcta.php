@@ -41,7 +41,7 @@
 					</form>
 				</div>
 			</section>
-			<section>
+			<section id="section-php">
 
 				<?php
 				$nombrePost = $_POST['nombre'];
@@ -83,7 +83,7 @@
 
 				$doc->save($xml_path);
 
-				echo "[Fichero generado y guardado correctamente]"
+				echo "<p>[Fichero generado y guardado correctamente]</p>"
 				?>
 
 			</section>
