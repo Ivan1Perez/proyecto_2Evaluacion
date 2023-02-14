@@ -34,7 +34,8 @@
 					<form action="../alta_correcta/alta_correcta.php" method="post">
 						<fieldset>
 		                    <legend>Datos Personales</legend>
-		                    <input type="text" name="nombre"  placeholder="Nombre">
+		                    <input type="text" name="nombre"  placeholder="Nombre" pattern="[a-zA-Z]{2,14}" required oninvalid="setCustomValidity('El nombre debe estar formado únicamente por letras y tener una longitud mayor que 1 y menor que 15')">
+						  </form>>
 		                    </br>
 		                    </br>
 		                    <input type="text" name="apellidos" placeholder="Apellidos">
