@@ -62,24 +62,19 @@ header{
 	border-radius: 4px;
 }
 
-.volver {
+.bienvenido {
+	display: inline-block;
+	width: auto;
 	background-color: #0071c2;
 	padding: 10px 20px;
+	margin-left: auto;
+	margin-right: 0;
 	color: white;
 	border-radius: 4px 0px 4px 0px;
 	font-family: sans-serif;
 	text-decoration: none;
 	box-shadow: inset 2px 2px 0px white, inset -2px -2px 0px #ffffff85;
 	transition: all 50ms;
-}
-
-.volver:hover{
-	background-color: white;
-	border: 2px solid #0071c2;
-	padding: 12px 22px;
-	color: #0071c2;
-	box-shadow: none;
-	font-size: 18px;
 }
 
 #form-container{
