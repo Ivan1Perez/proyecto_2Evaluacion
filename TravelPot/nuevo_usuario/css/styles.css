@@ -144,6 +144,12 @@ section > p{
 	margin-top: 40px;
 }
 
+#formulario form fieldset p{
+	color: white;
+	font-size: 12px;
+	margin-left: 20px;
+}
+
 #formulario legend{
 	color:white;
 	font-family: sans-serif;
