@@ -82,15 +82,9 @@ header{
 	font-size: 18px;
 }
 
-main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 40px;
-}
-
 #form-container{
 	width: 300px;
+	margin: 0 auto;
 }
 
 form{
@@ -136,4 +130,13 @@ fieldset img{
 	border:none;
 	margin-bottom: 20px;
 	cursor: pointer;
+}
+
+#section-php{
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+#section-php p{
+	text-align: center;
 }

@@ -54,7 +54,8 @@
 				$passwordPost = $_POST['password'];
 
 				$doc = new DOMDocument();
-				$doc->load('travelpot.xml');
+				$xml_path = (dirname(__FILE__)) . '/../XML/travelpot.xml';
+				$doc->load($xml_path);
 
 				$usuarios = $doc->getElementsByTagName('usuarios')->item(0);
 
@@ -80,9 +81,9 @@
 
 				$usuarios->appendChild($no_root);
 
-				$doc->save('travelpot.xml');
+				$doc->save($xml_path);
 
-				echo "Fichero generado y guardado correctamente."
+				echo "[Fichero generado y guardado correctamente]"
 				?>
 
 			</section>

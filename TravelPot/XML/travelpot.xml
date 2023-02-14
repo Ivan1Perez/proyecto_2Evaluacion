@@ -30,8 +30,8 @@
     <usuarios>
         <!-- Solo hay uno-->
         <root>
-            <usuario></usuario>
-            <password></password>
+            <usuario>root</usuario>
+            <password>123456</password>
         </root>
         <!-- Puede haber indefinidos-->
         <no_root>
