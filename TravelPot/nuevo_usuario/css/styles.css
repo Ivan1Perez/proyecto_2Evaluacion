@@ -147,7 +147,8 @@ section > p{
 #formulario form fieldset p{
 	color: white;
 	font-size: 12px;
-	margin-left: 20px;
+	margin: 0 24px;
+	text-align: justify;
 }
 
 #formulario legend{
@@ -158,7 +159,7 @@ section > p{
 }
 
 fieldset input{
-	margin-left: 20px;
+	margin: 0 22px;
 	width: calc(90% - 10px);
 }
 
