@@ -44,6 +44,7 @@
 			<section id="section-php">
 
 				<?php
+
 				$nombrePost = $_POST['nombre'];
 				$apellidosPost = $_POST['apellidos'];
 				$direccionPost = $_POST['direccion'];
@@ -53,38 +54,53 @@
 				$usuarioPost = $_POST['usuario'];
 				$passwordPost = $_POST['password'];
 
-				$doc = new DOMDocument();
-				$xml_path = (dirname(__FILE__)) . '/../XML/travelpot.xml';
-				$doc->load($xml_path);
+				$usuarioNoExiste = false;
 
-				$usuarios = $doc->getElementsByTagName('usuarios')->item(0);
+				$carga_xml = simplexml_load_file('/../XML/travelpot.xml');
 
-				$no_root = $doc->createElement('no_root');
+				foreach ($carga_xml->usuarios->no_root as $nodo) {
+					if ($nodo->usuario == $usuarioPost) {
+						$usuarioNoExiste = true;
+						echo 'Este nombre de usuario ya existe. Pruebe de nuevo.';
+					}
+				}
 
-				$nombre = $doc->createElement('nombre', $nombrePost);
-				$apellidos = $doc->createElement('apellidos', $apellidosPost);
-				$direccion = $doc->createElement('direccion', $direccionPost);
-				$poblacion = $doc->createElement('poblacion', $poblacionPost);
-				$provincia = $doc->createElement('provincia', $provinciaPost);
-				$email = $doc->createElement('email', $emailPost);
-				$usuario = $doc->createElement('usuario', $usuarioPost);
-				$password = $doc->createElement('password', $passwordPost);
+				if ($usuarioNoExiste) {
 
-				$no_root->appendChild($nombre);
-				$no_root->appendChild($apellidos);
-				$no_root->appendChild($direccion);
-				$no_root->appendChild($poblacion);
-				$no_root->appendChild($provincia);
-				$no_root->appendChild($email);
-				$no_root->appendChild($usuario);
-				$no_root->appendChild($password);
+					$doc = new DOMDocument();
+					$xml_path = (dirname(__FILE__)) . '/../XML/travelpot.xml';
+					$doc->load($xml_path);
 
-				$usuarios->appendChild($no_root);
+					$usuarios = $doc->getElementsByTagName('usuarios')->item(0);
 
-				$doc->save($xml_path);
+					$no_root = $doc->createElement('no_root');
 
-				echo "<p>[Fichero generado y guardado correctamente]</p>"
+					$nombre = $doc->createElement('nombre', $nombrePost);
+					$apellidos = $doc->createElement('apellidos', $apellidosPost);
+					$direccion = $doc->createElement('direccion', $direccionPost);
+					$poblacion = $doc->createElement('poblacion', $poblacionPost);
+					$provincia = $doc->createElement('provincia', $provinciaPost);
+					$email = $doc->createElement('email', $emailPost);
+					$usuario = $doc->createElement('usuario', $usuarioPost);
+					$password = $doc->createElement('password', $passwordPost);
+
+					$no_root->appendChild($nombre);
+					$no_root->appendChild($apellidos);
+					$no_root->appendChild($direccion);
+					$no_root->appendChild($poblacion);
+					$no_root->appendChild($provincia);
+					$no_root->appendChild($email);
+					$no_root->appendChild($usuario);
+					$no_root->appendChild($password);
+
+					$usuarios->appendChild($no_root);
+
+					$doc->save($xml_path);
+
+					echo "<p>[Fichero generado y guardado correctamente]</p>";
+				}
 				?>
+
 
 			</section>
 		</main>
