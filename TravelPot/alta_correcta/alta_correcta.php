@@ -54,27 +54,32 @@
 				$usuarioPost = $_POST['usuario'];
 				$passwordPost = $_POST['password'];
 
-				$usuarioNoExiste = false;
+				$usuarioExiste = false;
 
-				$carga_xml = simplexml_load_file('/../XML/travelpot.xml');
+				$doc = new DOMDocument();
+				$docServidor = new DOMDocument();
+				$xml_path = (dirname(__FILE__)) . '/../XML/travelpot.xml';
+				$doc->load($xml_path);
+				$docServidor->load('http://iperez-salameroh.ieslavereda.es/proyecto_2Evaluacion/TravelPot/XML/travelpot.xml');
 
-				foreach ($carga_xml->usuarios->no_root as $nodo) {
-					if ($nodo->usuario == $usuarioPost) {
-						$usuarioNoExiste = true;
-						echo 'Este nombre de usuario ya existe. Pruebe de nuevo.';
+				//Guardamos la cantidad de 'no_root's que hay.
+				$cantidad_no_root = $docServidor->getElementsByTagName('no_root')->length;
+
+				//Recorremos los 'no_root' con un for.
+				for($i = 0; $i < $cantidad_no_root; $i++){
+					$no_root = $docServidor->getElementsByTagName('no_root')->item($i);
+					$usuario = $no_root->getElementsByTagName('usuario')->item(0)->nodeValue;
+					if($usuario==$usuarioPost){
+						$usuarioExiste = true;
+						echo '<p>Este nombre usuario ya se encuentra registrado. Pruebe con uno diferente</p>';
 					}
 				}
-
-				if ($usuarioNoExiste) {
-
-					$doc = new DOMDocument();
-					$xml_path = (dirname(__FILE__)) . '/../XML/travelpot.xml';
-					$doc->load($xml_path);
-
+				
+				if(!$usuarioExiste){
 					$usuarios = $doc->getElementsByTagName('usuarios')->item(0);
 
 					$no_root = $doc->createElement('no_root');
-
+	
 					$nombre = $doc->createElement('nombre', $nombrePost);
 					$apellidos = $doc->createElement('apellidos', $apellidosPost);
 					$direccion = $doc->createElement('direccion', $direccionPost);
@@ -83,7 +88,7 @@
 					$email = $doc->createElement('email', $emailPost);
 					$usuario = $doc->createElement('usuario', $usuarioPost);
 					$password = $doc->createElement('password', $passwordPost);
-
+	
 					$no_root->appendChild($nombre);
 					$no_root->appendChild($apellidos);
 					$no_root->appendChild($direccion);
@@ -92,13 +97,14 @@
 					$no_root->appendChild($email);
 					$no_root->appendChild($usuario);
 					$no_root->appendChild($password);
-
+	
 					$usuarios->appendChild($no_root);
-
+	
 					$doc->save($xml_path);
-
+	
 					echo "<p>[Fichero generado y guardado correctamente]</p>";
 				}
+				
 				?>
 
 
