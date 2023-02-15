@@ -220,7 +220,7 @@ header{
 	text-decoration: none;
 }
 
-.cajaReg_Ini {
+.cajaReg_Ini, .cajaPerfil{
 	display: block;
 	width: 110px;
 	background-color: white;
@@ -230,6 +230,23 @@ header{
 	font-family: sans-serif;
 	text-decoration: none;
 	position: relative;
+}
+
+.cajaPerfil{ /*sesionIniciada*/
+	height: 41px;
+	width: auto;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+}
+
+.perfil{
+	position: relative;
+	display: block;
+	left: 0px;
+	padding: 5px 5px;
+	width: 30px;
+	height: 30px;
 }
 
 /*FIN CABECERA*/

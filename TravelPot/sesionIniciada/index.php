@@ -48,7 +48,7 @@
 							</div>
 						</td>
 						<td style="width: 150px; padding-right: 10px;">
-							<a href="inicio_sesion/inicio_sesion.html"class="cajaReg_Ini"><?php echo $_POST['usuario']?></a>
+							<a href="inicio_sesion/inicio_sesion.html"class="cajaReg_Ini"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_POST['usuario']?></a>
 						</td>
 						<td style="width: 150px;">
 							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg_Ini">Log out</a>
