@@ -60,9 +60,10 @@
 					<div id="form-container">
 						<form action="../index_esp.html">
 							<fieldset>
-								<legend>¡ERROR!</legend>
+								<legend style="color: red;">¡ERROR!</legend>
 								<p>Este nombre usuario ya se encuentra registrado.<br> Pruebe con uno diferente</p>
 								<img src="../multimedia/prohibition.png" alt="icono-prohibido">
+								<input type="button" value="Volver a registro" class="volver-iniciarSesion" onclick="location.href=\'../nuevo_usuario/nuevo_usuario.html\'">
 								<input type="submit" value="Volver al inicio" class="volver-iniciarSesion">
 								<input type="button" value="Iniciar sesión" class="volver-iniciarSesion" onclick="location.href=\'../inicio_sesion/inicio_sesion.html\'">
 							</fieldset>

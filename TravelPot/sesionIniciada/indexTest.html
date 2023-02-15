@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TravelPot.com | Official Site</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<div id="changebd">
+		<div class="beach_bg">
+			<div class="darker"></div>
+		</div>
+		<div class="nightcity_bg">
+			<div class="darker"></div>
+		</div>
+		<div class="snow_bg">
+			<div class="darker"></div>
+		</div>
+		<div class="egypt_bg">
+			<div class="darker"></div>
+		</div>
+	</div>
+	<div id="full_container">
+		<header>
+			<nav>
+				<table id="headerTable">
+					<tr>
+						<td style="width: 15%;">
+							<div id="logo">
+								<p><b>TravelPot</b></p>
+							</div>
+						</td>
+						<td style="width: 40%;"></td>
+
+						<td style="padding-right: 10px;">
+							<input type="checkbox" id="btn-modal">
+							<label for="btn-modal" class="lbl-modal">Choose language 🇬🇧</label>
+							<div class="modal">
+								<div class="contenedor">
+									<p>Select your language</p>
+									<label for="btn-modal">❎</label>
+									<div class="contenido">
+										<a href="index_esp.html" class="idioma">Spanish 🇪🇸</a>
+										<a href="index_eng.html" class="idioma">English 🇬🇧</a>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td style="width: 150px; padding-right: 10px;">
+							<!--Llevará al perfil-->
+							<a href="#" class="cajaReg_Ini"></a>
+						</td>
+						<td style="width: 150px;">
+							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg_Ini">Log out</a>
+						</td>
+					</tr>
+				</table>
+			</nav>
+			<table id="barra_busqueda">
+				<tr id="t_row">
+					<td style="width: 40%;">
+						<input class="input_destino" type="text" name="destino" placeholder="Choose destination">
+					</td>
+					<td style="width: 22%;">
+						<input class="input_fechas" type="date" name="fechas">
+					</td>
+					<td style="width: 22%;">
+						<form action="#">
+							<input class="input_huespedes" type="submit" name="huespedes" value="Guests/Rooms">
+						</form>
+					</td>
+					<td>
+						<form action="#">
+							<input class="input_buscar" type="submit" name="buscar" value="Search">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</header>
+		<main>
+			<div id="destinos">
+				<div id="destacadas">
+					<p>Outstanding cities</p>
+				</div>
+				<section class="section1">
+					<div class="ciudades">
+						<a href="hoteles_valencia/index_valencia.html" class="ciudad">Valencia</a>
+						<br>
+						<br>
+						<a href="hoteles_valencia/index_valencia.html"><img src="../imagenes/valencia.jpg" class="img_ciudad" alt="imagen valencia"></a>
+					</div>
+					<div class="ciudades">
+						<a href="hoteles_barcelona/index_barcelona.html" class="ciudad">Barcelona</a>
+						<br>
+						<br>
+						<a href="hoteles_barcelona/index_barcelona.html"><img src="../imagenes/barcelona.jpg" class="img_ciudad" alt="imagen barcelona"></a>
+					</div>
+					<div class="ciudades">
+						<a href="hoteles_madrid/index_madrid.html" class="ciudad">Madrid</a>
+						<br>
+						<br>
+						<a href="hoteles_madrid/index_madrid.html"><img src="../imagenes/madrid.jpg" class="img_ciudad" alt="imagen madrid"></a>
+					</div>
+					<div class="ciudades">
+						<a href="hoteles_bilbao/index_bilbao.html" class="ciudad">Bilbao</a>
+						<br>
+						<br>
+						<a href="hoteles_bilbao/index_bilbao.html"><img src="../imagenes/bilbao.jpg" class="img_ciudad" alt="imagen bilbao"></a>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<section id="bienvenida">
+		<div class="text_intro">
+			<p>Enjoy incredible destinations with the best offers</p>
+		</div>
+		<article id="cajaArt">
+			<div class="textOfert">
+				<h2>Season offers</h2>
+				<br>
+				<br>
+				<p>
+					Seize the moment and get the best discounts to date!
+				</p>
+				<div class="formOfert">
+					<form action="#">
+						<input class="botonesBienv" type="submit" name="Ofertas" value="Show Offers">
+					</form>
+					<img src="../multimedia/gift.png">
+				</div>
+			</div>
+			<div style="height: 328px; width: 100%;">
+				<img src="../imagenes/ski.jpg" id="imgSki">
+			</div>
+			<div style="height: 328px; width: 100%;">
+				<img src="../imagenes/collage.jpg" id="imgPack">
+			</div>
+			<div class="textPack">
+				<h2>Destinations Pack</h2>
+				<br>
+				<br>
+				<p>
+					Discover which destination pack suits you best!
+				</p>
+				<div class="formPack">
+					<img src="../multimedia/package.png">
+					<form action="#">
+						<input class="botonesBienv" type="submit" name="Ofertas" value="Show Offers">
+					</form>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section id="publi">
+		<a href="#" class="img-publi1">
+			<p>Compare thousands of flights among hundreds of airlines.</p>
+		</a>
+		<a href="#" class="img-publi2">
+			<p>Rent the best cars at incredible prices.</p>
+		</a>
+	</section>
+	<hr style="top: 880px; position: relative; color:black">
+	<footer>
+		<div id="autor">
+			<p> Developed by <b>Iván Pérez-Salamero Hernández</b>&copy</p>
+			<br>
+			<p>1st WEB Applications Development</p>
+			<br>
+			<a id="autores" href="../agradecimientos/index_agradecimientos.html">Appreciations / Thanks</a>
+		</div>
+	</footer>
+</body>
+</html>

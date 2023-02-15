@@ -245,9 +245,6 @@ header{
 	height: 50px;
 }
 
-#t_row{
-}
-
 .input_destino {
 	width: 100%;
 	border: none;
@@ -623,3 +620,4 @@ footer{
 	border-radius: 6px;
 	padding: 6px;
 	text-decoration: none;
+}
