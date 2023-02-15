@@ -62,7 +62,7 @@
 							<fieldset>
 								<legend>¡ERROR!</legend>
 								<p>Este nombre usuario ya se encuentra registrado.<br> Pruebe con uno diferente</p>
-								<img src="../multimedia/check.png" alt="icono-correcto">
+								<img src="../multimedia/prohibition.png" alt="icono-prohibido">
 								<input type="submit" value="Volver al inicio" class="volver-iniciarSesion">
 								<input type="button" value="Iniciar sesión" class="volver-iniciarSesion" onclick="location.href=\'../inicio_sesion/inicio_sesion.html\'">
 							</fieldset>
