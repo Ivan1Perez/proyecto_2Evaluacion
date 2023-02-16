@@ -49,7 +49,7 @@
 						</td>
 						<td style="padding-right: 10px;">
 							<!-- Perfil -->
-							<a href="#"class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
+							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>"class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
 						</td>
 						<td>
 							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg">Log out</a>

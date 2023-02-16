@@ -113,7 +113,7 @@
 							</div>
 						</td>
 						<td style="text-align: right;">
-							<p class="bienvenido">Bienvenido ' .$_POST["nombre"]. '</p>
+							<p class="bienvenido">Bienvenid@ ' .$_POST["nombre"]. '</p>
 						</td>
 					</tr>
 				</table>
