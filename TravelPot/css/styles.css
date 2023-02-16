@@ -220,31 +220,37 @@ header{
 	text-decoration: none;
 }
 
-.cajaReg_Ini, .cajaPerfil{
-	display: block;
-	width: 110px;
+.cajaReg, .cajaIni, .cajaPerfil{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 41px;
 	background-color: white;
 	border: 1px solid #0071c2;
-	padding: 10px;
+	padding: 0 10px;
 	color: #0071c2;
 	font-family: sans-serif;
 	text-decoration: none;
-	position: relative;
 }
 
-.cajaPerfil{ /*sesionIniciada*/
-	height: 41px;
+.cajaIni{
+	width: 100px;
+}
+
+.cajaReg{
+	width: 80px;
+}
+
+.cajaPerfil{
+	padding: 0 5px;
 	width: auto;
-	padding: 0 10px;
-	display: flex;
-	align-items: center;
 }
 
 .perfil{
 	position: relative;
 	display: block;
 	left: 0px;
-	padding: 5px 5px;
+	padding-right: 5px;
 	width: 30px;
 	height: 30px;
 }
