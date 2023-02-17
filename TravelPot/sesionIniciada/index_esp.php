@@ -81,32 +81,32 @@
 		<main>
 			<div id="destinos">
 				<div id="destacadas">
-					<p>Outstanding cities</p>
+					<p>Ciudades destacadas</p>
 				</div>
 				<section class="section1">
 					<div class="ciudades">
-						<a href="hoteles_valencia/index_valencia.html" class="ciudad">Valencia</a>
+						<a href="../hoteles_valencia/index_valencia.html" class="ciudad">Valencia</a>
 						<br>
 						<br>
-						<a href="hoteles_valencia/index_valencia.html"><img src="../imagenes/valencia.jpg" class="img_ciudad" alt="imagen valencia"></a>
+						<a href="../hoteles_valencia/index_valencia.html"><img src="../imagenes/valencia.jpg" class="img_ciudad" alt="imagen valencia"></a>
 					</div>
 					<div class="ciudades">
-						<a href="hoteles_barcelona/index_barcelona.html" class="ciudad">Barcelona</a>
+						<a href="../hoteles_barcelona/index_barcelona.html" class="ciudad">Barcelona</a>
 						<br>
 						<br>
-						<a href="hoteles_barcelona/index_barcelona.html"><img src="../imagenes/barcelona.jpg" class="img_ciudad" alt="imagen barcelona"></a>
+						<a href="../hoteles_barcelona/index_barcelona.html"><img src="../imagenes/barcelona.jpg" class="img_ciudad" alt="imagen barcelona"></a>
 					</div>
 					<div class="ciudades">
-						<a href="hoteles_madrid/index_madrid.html" class="ciudad">Madrid</a>
+						<a href="../hoteles_madrid/index_madrid.html" class="ciudad">Madrid</a>
 						<br>
 						<br>
-						<a href="hoteles_madrid/index_madrid.html"><img src="../imagenes/madrid.jpg" class="img_ciudad" alt="imagen madrid"></a>
+						<a href="../hoteles_madrid/index_madrid.html"><img src="../imagenes/madrid.jpg" class="img_ciudad" alt="imagen madrid"></a>
 					</div>
 					<div class="ciudades">
-						<a href="hoteles_bilbao/index_bilbao.html" class="ciudad">Bilbao</a>
+						<a href="../hoteles_bilbao/index_bilbao.html" class="ciudad">Bilbao</a>
 						<br>
 						<br>
-						<a href="hoteles_bilbao/index_bilbao.html"><img src="../imagenes/bilbao.jpg" class="img_ciudad" alt="imagen bilbao"></a>
+						<a href="../hoteles_bilbao/index_bilbao.html"><img src="../imagenes/bilbao.jpg" class="img_ciudad" alt="imagen bilbao"></a>
 					</div>
 				</section>
 			</div>

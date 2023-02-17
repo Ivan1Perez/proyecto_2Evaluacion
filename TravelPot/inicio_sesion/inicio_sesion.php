@@ -22,7 +22,7 @@
 		}
 
 		if($usuarioExiste){
-			$url = "../sesionIniciada/index.php?usuario=" . urlencode($usuario);
+			$url = "../sesionIniciada/index_esp.php?usuario=" . urlencode($usuario);
             header("Location: " . $url);
 		    exit;
         }
