@@ -41,8 +41,8 @@
 									<p>Select your language</p>
 									<label for="btn-modal">❎</label>
 									<div class="contenido">
-										<a href="index_esp.html" class="idioma">Spanish 🇪🇸</a>
-										<a href="index_eng.html" class="idioma">English 🇬🇧</a>
+										<a href="index_esp.php" class="idioma">Spanish 🇪🇸</a>
+										<a href="index_eng.php" class="idioma">English 🇬🇧</a>
 									</div>
 								</div>
 							</div>
