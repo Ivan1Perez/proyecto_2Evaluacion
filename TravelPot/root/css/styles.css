@@ -1,3 +1,22 @@
+@font-face {
+	font-family: 'Pacifico-Regular';
+	src: url('../../fuentes/Pacifico/Pacifico-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Playfair_Display';
+	src: url('../../fuentes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../fuentes/Montserrat-VariableFont_wght.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
