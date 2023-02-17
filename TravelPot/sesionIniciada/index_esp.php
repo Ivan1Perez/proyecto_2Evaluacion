@@ -57,26 +57,26 @@
 					</tr>
 				</table>
 			</nav>
-			<table id="barra_busqueda">
-				<tr id="t_row">
-					<td style="width: 40%;">
-						<input class="input_destino" type="text" name="destino" placeholder="Elige el destino">
-					</td>
-					<td style="width: 22%;">
-						<input class="input_fechas" type="date" name="fechas">
-					</td>
-					<td style="width: 22%;">
-						<form action="#">
-							<input class="input_huespedes" type="submit" name="huespedes" value="Huéspedes/Habitaciones">
-						</form>
-					</td>
-					<td>
-						<form action="#">
+			<form action="#">
+				<table id="barra_busqueda">
+					<tr id="t_row">
+						<td style="width: 40%;">
+							<input class="input_destino" type="text" name="destino" placeholder="Elige el destino">
+						</td>
+						<td style="width: 22%;">
+							<input class="input_fechas" type="date" name="fechas">
+						</td>
+						<td style="width: 22%;">
+							<form action="#">
+								<input class="input_huespedes" type="submit" name="huespedes" value="Huéspedes/Habitaciones">
+							</form>
+						</td>
+						<td>
 							<input class="input_buscar" type="submit" name="buscar" value="Buscar">
-						</form>
-					</td>
-				</tr>
-			</table>
+						</td>
+					</tr>
+				</table>
+			</form>
 		</header>
 		<main>
 			<div id="destinos">

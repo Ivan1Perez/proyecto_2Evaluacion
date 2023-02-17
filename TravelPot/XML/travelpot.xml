@@ -13,9 +13,10 @@
     <!ELEMENT provincia (#PCDATA)>
     <!ELEMENT email (#PCDATA)>
     <!ELEMENT hoteles (hotel*)>
-    <!ELEMENT hotel (nombre_hotel, ciudad, importe_habitacion)>
+    <!ELEMENT hotel (nombre_hotel, ciudad, numHabitaciones, importe_habitacion)>
     <!ELEMENT nombre_hotel (#PCDATA)>
     <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT numHabitaciones (#PCDATA)>
     <!ELEMENT importe_habitacion (#PCDATA)>
     <!ELEMENT reservas (reserva*)>
     <!ELEMENT reserva (nombre_hotel, dia_entrada, dia_salida, nombre_reserva, importe_reserva)>
@@ -34,22 +35,23 @@
         </root>
         <!-- Puede haber indefinidos-->
         <no_root>
-            <nombre></nombre>
-            <apellidos></apellidos>
-            <direccion></direccion>
-            <poblacion></poblacion>
-            <provincia></provincia>
-            <email></email>
-            <usuario></usuario>
-            <password></password>
+            <nombre>Ivan</nombre>
+            <apellidos>Perez</apellidos>
+            <direccion>Olocau</direccion>
+            <poblacion>Valencia</poblacion>
+            <provincia>Calle falsa 123</provincia>
+            <email>ivan@gmail.es</email>
+            <usuario>Iv</usuario>
+            <password>4Cuatro!</password>
         </no_root>
     </usuarios>
     <hoteles>
         <!-- Puede haber indefinidos-->
         <hotel>
-            <nombre_hotel></nombre_hotel>
-            <ciudad></ciudad>
-            <importe_habitacion></importe_habitacion>
+            <nombre_hotel>Ad Hoc Monumental 1881</nombre_hotel>
+            <ciudad>Valencia</ciudad>
+            <numHabitaciones>1</numHabitaciones>
+            <importe_habitacion>60</importe_habitacion>
         </hotel>
     </hoteles>
     <reservas>

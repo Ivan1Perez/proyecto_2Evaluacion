@@ -20,7 +20,11 @@
                             </div>
                         </td>
                         <td>
-                            <a href="../index_esp.html" class="volver">Volver</a>
+                            <?php
+                                $url = "../sesionIniciada/index_esp.php?usuario=" . urlencode($_GET['usuario']);
+
+                                echo '
+                                <a href="'.$url.'" class="volver">Volver</a>';?>
                         </td>
                         <td style="width: 150px;">
                             <p class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']; ?></p>
