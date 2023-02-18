@@ -124,7 +124,7 @@ main {
     width: auto;
 }
 
-form {
+form, .listarForm {
     background: #000000bd;
     margin: 0px auto;
     padding: 20px;
@@ -183,7 +183,11 @@ fieldset input {
 }
 
 
-/*---------------------------------------------LISTA USUARIOS------------------------------------------------*/
+/*---------------------------------------------LISTAR USUARIOS------------------------------------------------*/
+
+.listarForm{
+    width: 500px;
+}
 
 #fieldsetUsuarios{
     color: white;
@@ -192,7 +196,7 @@ fieldset input {
     display: block;
 }
 
-.contenedorUsuario{
+.contenedorUsuarioListar{
     padding: 10px 0;
 }
 
@@ -200,10 +204,40 @@ fieldset input {
     text-align: left;
 }
 
-.contenidoUsuario{
+.contenidoUsuario, .contenidoUsuarioBorrar{
 	text-align: left;
 	border: 1px solid white;
 	font-size: 16px;
 	font-family: sans;
 	padding: 10px;
+    transition: all 300ms;
+}
+
+/*---------------------------------------------BORRAR USUARIOS------------------------------------------------*/
+
+.contenedorUsuarioBorrar{
+    padding: 10px 0;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.contenedorUsuarioBorrar:hover{
+    background-color: white;
+    color: black
+}
+
+.contenidoUsuarioBorrar:hover{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#fieldsetUsuariosBorrar{
+    color: white;
+	font-size: 26px;
+	padding: 15px;
+	display: block;
+}
+
+#envio{
+    display: none;
 }

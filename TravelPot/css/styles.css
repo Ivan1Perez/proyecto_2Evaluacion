@@ -167,6 +167,7 @@ header{
 	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
 	transition: all 500ms ease;
 	transform: translateY(-30%);
+	text-align: center;
 }
 
 #btn-modal:checked ~ .modal .contenedor{
@@ -218,7 +219,7 @@ header{
 	text-decoration: none;
 }
 
-.cajaReg, .cajaIni, .cajaPerfil {
+.cajaReg, .cajaIni_esp, .cajaIni_eng, .cajaPerfil, .cajaRoot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,17 +231,26 @@ header{
     border-radius: 4px;
 }
 
-.cajaIni{
+.cajaIni_eng{
+	padding: 10px 0;
 	width: 100px;
+}
+
+.cajaIni_esp{
+	width: 130px;
+	padding: 10px 0;
 }
 
 .cajaReg{
 	padding: 10px 10px;
 }
 
-.cajaPerfil{
+.cajaPerfil, .cajaRoot{
 	padding: 4.5px 10px;
-	width: auto;
+}
+
+.cajaRoot{
+	width: 155px;
 }
 
 .perfil{

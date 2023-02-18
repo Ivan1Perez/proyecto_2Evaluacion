@@ -26,14 +26,12 @@
 			<nav>
 				<table id="headerTable">
 					<tr>
-						<td style="width: 15%;">
+						<td style="text-align: left;">
 							<div id="logo">
 								<p><b>TravelPot</b></p>
 							</div>
 						</td>
-						<td style="width: 40%;"></td>
-
-						<td>
+						<td style="text-align: right; padding-right: 10px">
 							<input type="checkbox" id="btn-modal">
 							<label for="btn-modal" class="lbl-modal">Choose language 🇬🇧</label>
 							<div class="modal">
@@ -41,17 +39,17 @@
 									<p>Select your language</p>
 									<label for="btn-modal">❎</label>
 									<div class="contenido">
-										<a href="index_esp.php" class="idioma">Spanish 🇪🇸</a>
-										<a href="index_eng.php" class="idioma">English 🇬🇧</a>
+										<a href="index_esp.php?usuario=<?php echo urlencode($_GET['usuario']); ?>"" class="idioma">Spanish 🇪🇸</a>
+										<a href="index_eng.php?usuario=<?php echo urlencode($_GET['usuario']); ?>"" class="idioma">English 🇬🇧</a>
 									</div>
 								</div>
 							</div>
 						</td>
-						<td style="padding-right: 10px;">
+						<td style="padding-right: 10px; width: 0px;">
 							<!-- Perfil -->
 							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>"class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
 						</td>
-						<td>
+						<td style="width: 130px;">
 							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg">Log out</a>
 						</td>
 					</tr>

@@ -20,7 +20,7 @@
                             </div>
                         </td>
                         <td style="text-align: right; padding-right: 20px;">
-                            <a href="#" class="volver">Volver</a>
+                            <a href="../sesionIniciada/index_esp.php?usuario=<?php echo urlencode('root'); ?>" class="volver">Volver a inicio</a>
                         </td>
                         <td style="width: 0px;">
                             <p class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil">root</p>

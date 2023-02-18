@@ -39,16 +39,26 @@
 									<p>Selecciona tu idioma</p>
 									<label for="btn-modal">❎</label>
 									<div class="contenido">
-										<a href="index_esp.php" class="idioma">Español 🇪🇸</a>
-										<a href="index_eng.php" class="idioma">English 🇬🇧</a>
+										<a href="index_esp.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" class="idioma">Español 🇪🇸</a>
+										<a href="index_eng.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" class="idioma">English 🇬🇧</a>
 									</div>
 								</div>
 							</div>
 						</td>
 						<td style="padding-right: 10px; width: 0px;">
 							<!-- Perfil -->
-							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>"class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
+							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
 						</td>
+						<?php
+						
+						if(urlencode($_GET['usuario'])=="root"){
+							echo '<td style="padding-right: 10px; width: 0px;">
+							<!-- Opciones root -->
+							<a href="../root/menuOpciones.php" class="cajaRoot"><img src="../multimedia/settings.png" class="perfil" alt="imagen-perfil">Opciones root</a>
+							</td>';
+						}
+
+						?>
 						<td style="width: 130px;">
 							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg">Cerrar sesión</a>
 						</td>
