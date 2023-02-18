@@ -44,6 +44,26 @@
             <usuario>Iv</usuario>
             <password>4Cuatro!</password>
         </no_root>
+        <no_root>
+            <nombre>Test1</nombre>
+            <apellidos>Test1Apellido</apellidos>
+            <direccion>Invent1</direccion>
+            <poblacion>XD</poblacion>
+            <provincia>Mas Invent</provincia>
+            <email>invent1@gmail.es</email>
+            <usuario>Test1Usuario</usuario>
+            <password>4Cuatro!</password>
+        </no_root>
+        <no_root>
+            <nombre>Test2</nombre>
+            <apellidos>Test2Apellido</apellidos>
+            <direccion>Invent2</direccion>
+            <poblacion>XD</poblacion>
+            <provincia>Mas Invent</provincia>
+            <email>invent2@gmail.es</email>
+            <usuario>Test2Usuario</usuario>
+            <password>4Cuatro!</password>
+        </no_root>
     </usuarios>
     <hoteles>
         <!-- Puede haber indefinidos-->

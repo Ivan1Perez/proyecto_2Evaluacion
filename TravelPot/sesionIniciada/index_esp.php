@@ -26,14 +26,12 @@
 			<nav>
 				<table id="headerTable">
 					<tr>
-						<td style="width: 15%;">
+						<td style="text-align: left;">
 							<div id="logo">
 								<p><b>TravelPot</b></p>
 							</div>
 						</td>
-						<td style="width: 40%;"></td>
-
-						<td>
+						<td style="text-align: right; padding-right: 10px">
 							<input type="checkbox" id="btn-modal">
 							<label for="btn-modal" class="lbl-modal">Elegir idioma 🇪🇸</label>
 							<div class="modal">
@@ -47,11 +45,11 @@
 								</div>
 							</div>
 						</td>
-						<td style="padding-right: 10px;">
+						<td style="padding-right: 10px; width: 0px;">
 							<!-- Perfil -->
 							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>"class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
 						</td>
-						<td>
+						<td style="width: 130px;">
 							<a href="../inicio_sesion/inicio_sesion.html" class="cajaReg">Cerrar sesión</a>
 						</td>
 					</tr>
