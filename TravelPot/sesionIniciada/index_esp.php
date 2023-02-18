@@ -65,7 +65,7 @@
 					</tr>
 				</table>
 			</nav>
-			<form action="#">
+			<form action="busqueda.php" method="post">
 				<table id="barra_busqueda">
 					<tr id="t_row">
 						<td style="width: 40%;">
@@ -75,9 +75,7 @@
 							<input class="input_fechas" type="date" name="fechas">
 						</td>
 						<td style="width: 22%;">
-							<form action="#">
-								<input class="input_huespedes" type="submit" name="huespedes" value="Huéspedes/Habitaciones">
-							</form>
+							<input class="input_huespedes" type="text" name="huespedes" value="Huéspedes/Habitaciones">
 						</td>
 						<td>
 							<input class="input_buscar" type="submit" name="buscar" value="Buscar">
