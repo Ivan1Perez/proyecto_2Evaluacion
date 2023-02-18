@@ -219,6 +219,7 @@ fieldset input {
     padding: 10px 0;
     transition: all 300ms;
     cursor: pointer;
+    margin: 20px 0;
 }
 
 .contenedorUsuarioBorrar:hover{

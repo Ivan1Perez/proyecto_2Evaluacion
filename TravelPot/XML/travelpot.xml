@@ -28,12 +28,10 @@
 
 <travelpot>
     <usuarios>
-        <!-- Solo hay uno-->
         <root>
             <usuario>root</usuario>
             <password>123456</password>
         </root>
-        <!-- Puede haber indefinidos-->
         <no_root>
             <nombre>Ivan</nombre>
             <apellidos>Perez</apellidos>
@@ -66,7 +64,6 @@
         </no_root>
     </usuarios>
     <hoteles>
-        <!-- Puede haber indefinidos-->
         <hotel>
             <nombre_hotel>Ad Hoc Monumental 1881</nombre_hotel>
             <ciudad>Valencia</ciudad>
@@ -75,7 +72,6 @@
         </hotel>
     </hoteles>
     <reservas>
-        <!-- Puede haber indefinidos-->
         <reserva>
             <nombre_hotel></nombre_hotel>
             <dia_entrada></dia_entrada>
