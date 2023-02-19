@@ -16,7 +16,8 @@
 <!ELEMENT hotel (nombre_hotel, ciudad, numHabitaciones, importe_habitacion, descripcion)>
 <!ELEMENT nombre_hotel (#PCDATA)>
 <!ELEMENT ciudad (#PCDATA)>
-<!ELEMENT numHabitaciones (#PCDATA)>
+<!ELEMENT numHabitaciones EMPTY>
+<!ATTLIST numHabitaciones numero CDATA "1">
 <!ELEMENT importe_habitacion (#PCDATA)>
 <!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT reservas (reserva*)>
@@ -68,30 +69,86 @@
         <hotel>
             <nombre_hotel>Ad Hoc Monumental 1881 ⭐ ⭐ ⭐</nombre_hotel>
             <ciudad>Valencia</ciudad>
-            <numHabitaciones>1</numHabitaciones>
+            <numHabitaciones/>
             <importe_habitacion>60</importe_habitacion>
             <descripcion>Este hotel boutique se encuentra en el centro histórico de Valencia, junto a la catedral. El establecimiento ocupa un edificio precioso del siglo XIX y ofrece WiFi gratuita en todas las instalaciones....</descripcion>
         </hotel>
         <hotel>
             <nombre_hotel>NALU Valencia Boutique Rooms ⭐ ⭐ ⭐ ⭐</nombre_hotel>
-            <ciudad>Pepe</ciudad>
-            <numHabitaciones>1</numHabitaciones>
-            <importe_habitacion>60</importe_habitacion>
-            <descripcion>Este hotel boutique se encuentra en el centro histórico de Valencia, junto a la catedral. El establecimiento ocupa un edificio precioso del siglo XIX y ofrece WiFi gratuita en todas las instalaciones....</descripcion>
+            <ciudad>Valencia</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>99</importe_habitacion>
+            <descripcion>El NALU Valencia Boutique Rooms se encuentra en Valencia, a menos de 1 km de la iglesia de San Nicolás, y ofrece registro de entrada y salida exprés y WiFi gratuita en todas las instalaciones. </descripcion>
         </hotel>
         <hotel>
-            <nombre_hotel></nombre_hotel>
+            <nombre_hotel>Blanq Carmen Hotel ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Valencia</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>75</importe_habitacion>
+            <descripcion>El Blanq Carmen Hotel se encuentra en el centro histórico de Valencia, a solo 25 metros de las Torres de Serranos, en un edificio histórico que aún conserva su fachada original. Hay WiFi gratuita.</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Emperador ⭐ ⭐ ⭐ ⭐ ⭐</nombre_hotel>
             <ciudad>Madrid</ciudad>
-            <numHabitaciones>1</numHabitaciones>
-            <importe_habitacion>60</importe_habitacion>
-            <descripcion>Este hotel boutique se encuentra en el centro histórico de Valencia, junto a la catedral. El establecimiento ocupa un edificio precioso del siglo XIX y ofrece WiFi gratuita en todas las instalaciones....</descripcion>
+            <numHabitaciones/>
+            <importe_habitacion>175</importe_habitacion>
+            <descripcion>El Emperador está ubicado en pleno centro de Madrid, junto a la Gran Vía. Este hotel elegante tiene piscina de temporada en la azotea y terraza con vistas fantásticas a la ciudad.</descripcion>
         </hotel>
         <hotel>
-            <nombre_hotel>Ad Hoc Monumental 1881 ⭐ ⭐ ⭐</nombre_hotel>
-            <ciudad>Bar</ciudad>
-            <numHabitaciones>1</numHabitaciones>
+            <nombre_hotel>Gran Versalles ⭐ ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Madrid</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>99</importe_habitacion>
+            <descripcion>El Gran Hotel Versalles está situado en una zona tranquila del centro de Madrid, junto a la estación de metro Alonso Martínez.</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Apartosuites Jardines de Sabatin ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Madrid</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>80</importe_habitacion>
+            <descripcion>Estas suites de diseño están situadas frente al palacio real de Madrid y cuentan con conexión Wi-Fi gratuita, TV de pantalla plana vía satélite y zona de cocina bien equipada.</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Hotel Zenit Bilbao ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Bilbao</ciudad>
+            <numHabitaciones/>
             <importe_habitacion>60</importe_habitacion>
-            <descripcion>Este hotel boutique se encuentra en el centro histórico de Valencia, junto a la catedral. El establecimiento ocupa un edificio precioso del siglo XIX y ofrece WiFi gratuita en todas las instalaciones....</descripcion>
+            <descripcion>El Zenit Bilbao se encuentra en el céntrico barrio de Indautxu de Bilbao, a 10 minutos del estadio del Athletic de Bilbao, San Mamés. Ofrece habitaciones elegantes con WiFi gratuita y TV vía satélite....</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Sercotel Arenal Bilbao ⭐ ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Bilbao</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>99</importe_habitacion>
+            <descripcion>El establecimiento Sercotel Arenal Bilbao está ubicado en el centro de Bilbao, a 100 metros del teatro Arriaga, a 300 metros de la catedral de Santiago y a 100 metros de la estación de metro Casco...</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Hotel Tayko Bilbao ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Bilbao</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>75</importe_habitacion>
+            <descripcion>El Hotel Tayko Bilbao, edificado en 1924, está ubicado en Bilbao, a 200 metros del teatro Arriaga. Además, se halla a solo 0,2 km de la catedral de Santiago y a 15 minutos a pie del Museo Guggenheim.</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Ohla Eixample ⭐ ⭐ ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Barcelona</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>165</importe_habitacion>
+            <descripcion>El hotel boutique Ohla Eixample es elegante, tiene piscina exterior con vistas a la ciudad (disponible durante todo el año) y se halla a 10 minutos a pie de La Pedrera y la Casa Batlló, 2 de las...</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>ME Barcelona ⭐ ⭐ ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Barcelona</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>150</importe_habitacion>
+            <descripcion>El ME Barcelona se encuentra en Barcelona, a 2,7 km de la playa de Somorrostro, y ofrece bar, terraza y vistas al jardín.</descripcion>
+        </hotel>
+        <hotel>
+            <nombre_hotel>Hotel Continental Palacete ⭐ ⭐ ⭐</nombre_hotel>
+            <ciudad>Barcelona</ciudad>
+            <numHabitaciones/>
+            <importe_habitacion>80</importe_habitacion>
+            <descripcion>El Hotel Continental Palacete, situado en un palacio reformado del siglo XIX, es un establecimiento de estilo clásico con instalaciones de elegancia refinada.</descripcion>
         </hotel>
     </hoteles>
     <reservas>

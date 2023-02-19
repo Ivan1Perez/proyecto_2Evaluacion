@@ -159,7 +159,7 @@ header{
 	visibility: visible;
 }
 
-.contenedor {
+.contenedor, .contenedor_php {
 	width: 400px;
 	height: 150px;
 	margin: auto;
@@ -174,7 +174,7 @@ header{
 	transform: translateY(0%);
 }
 
-.contenedor p {
+.contenedor p, .contenedor_php p {
 	padding: 10px;
 	background-color: #db8046;
 	color: white;
@@ -208,7 +208,7 @@ header{
 	margin-top: 20px;
 }
 
-.idioma{
+.idioma, .fechas_php{
 	position: relative;
 	background-color: #0071c2;
 	padding: 10px;
@@ -217,6 +217,10 @@ header{
 	font-family: sans-serif;
 	border-radius: 4px;
 	text-decoration: none;
+}
+
+.fechas_php{
+	height: 20px;
 }
 
 .cajaReg, .cajaIni_esp, .cajaIni_eng, .cajaPerfil, .cajaRoot {
@@ -298,6 +302,65 @@ header{
 	line-height: 44px;
 }
 
+.modalFechas {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	padding-top: 100px;
+	justify-content: right;
+}
+
+#btn-modalFechas:checked ~ .modalFechas{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modalFechas:checked ~ .modalFechas .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modalFechas{
+	display: none;
+}
+
+.contenedor_php label {
+	position: relative;
+	top: -30px;
+	left: 180px;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 2px 4px;
+}
+
+.contenido_php{
+	display: flex;
+	font-family: sans-serif;
+}
+
+.lbl-modalFechas {
+	background-image: url('../multimedia/schedule.png');
+	background-size: 35px;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	background-color: white;
+	padding: 13.5px;
+	color: #6a6868;
+	font-size: 13px;
+	font-family: sans-serif;
+	border-radius: 4px;
+	cursor: pointer;
+	text-indent: 50px;
+	display: block;
+}
+
 .input_huespedes {
 	border: none;
 	border-radius: 4px;
@@ -306,9 +369,8 @@ header{
 	background-repeat: no-repeat;
 	background-position: 10px;
 	background-color: white;
-	text-indent: 30px;
+	text-indent: 50px;
 	cursor: pointer;
-	color: #757272;
 	width: 100%;
 }
 

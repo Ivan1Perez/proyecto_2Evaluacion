@@ -65,7 +65,7 @@ if(strlen($destino)==0){
         $numHotel++;
         $ciudad = $doc->getElementsByTagName('ciudad')->item($i)->nodeValue;
         $nombreHotel = $doc->getElementsByTagName('nombre_hotel')->item($i)->nodeValue;
-        $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($i)->nodeValue;
+        $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($i)->getAttribute('numero');
         $importe_habitacion = $doc->getElementsByTagName('importe_habitacion')->item($i)->nodeValue;
         $descripcion = $doc->getElementsByTagName('descripcion')->item($i)->nodeValue;
 
@@ -117,13 +117,13 @@ if(strlen($destino)==0){
             $ciudadEncontrada = true;
             $numHotel++;
             $nombreHotel = $doc->getElementsByTagName('nombre_hotel')->item($i)->nodeValue;
-            $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($i)->nodeValue;
+            $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($i)->getAttribute('numero');
             $importe_habitacion = $doc->getElementsByTagName('importe_habitacion')->item($i)->nodeValue;
             $descripcion = $doc->getElementsByTagName('descripcion')->item($i)->nodeValue;
     
             if($numHotel==1)
                 echo '<div id="enunciado">
-                        <h1>Hoteles en '.$ciudad.'</h1>
+                        <h1>Hoteles en \''.$destino.'\'</h1>
                     </div>';
     
             echo '

@@ -60,12 +60,27 @@
 						<input class="input_destino" type="text" name="destino" placeholder="Elige el destino">
 					</td>
 					<td style="width: 22%;">
-						<input class="input_fechas" type="date" name="fechas">
+						<input type="checkbox" id="btn-modalFechas">
+						<label for="btn-modalFechas" class="lbl-modalFechas">Elegir fechas</label>
+						<div class="modalFechas">
+							<div class="contenedor_php">
+								<p>Seleccione las fechas</p>
+								<label for="btn-modalFechas">❎</label>
+								<form class="contenido_php" action="#" method="post">
+									<div>
+										<label for="fechaLlegada" style="position: inherit; color: black; margin-bottom: 10px;">Fecha de llegada</label>
+										<input class="fechas_php" type="date" name="fechaLlegada" id="fechaLlegada">
+									</div>
+									<div>
+										<label for="fechaSalida" style="position: inherit; color: black; margin-bottom: 10px;">Fecha de salida</label>
+										<input class="fechas_php" type="date" name="fechaSalida" id="fechaSalida">										
+									</div>
+								</form>
+							</div>
+						</div>
 					</td>
 					<td style="width: 22%;">
-						<form action="#">
-							<input class="input_huespedes" type="submit" name="huespedes" value="Huéspedes/Habitaciones">
-						</form>
+						<input class="input_huespedes" type="text" name="huespedes" placeholder="Huéspedes/Habitaciones">
 					</td>
 					<td>
 						<form action="#">

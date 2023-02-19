@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TravelPot.com | Sitio Oficial</title>
 	<link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 	<div id="changebd">
 		<div class="beach_bg">
@@ -47,11 +49,11 @@
 						</td>
 						<td style="padding-right: 10px; width: 0px;">
 							<!-- Perfil -->
-							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario']?></a>
+							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario'] ?></a>
 						</td>
 						<?php
-						
-						if(urlencode($_GET['usuario'])=="root"){
+
+						if (urlencode($_GET['usuario']) == "root") {
 							echo '<td style="padding-right: 10px; width: 0px;">
 							<!-- Opciones root -->
 							<a href="../root/menuOpciones.php" class="cajaRoot"><img src="../multimedia/settings.png" class="perfil" alt="imagen-perfil">Opciones root</a>
@@ -72,10 +74,27 @@
 							<input class="input_destino" type="text" name="destino" placeholder="Elige el destino">
 						</td>
 						<td style="width: 22%;">
-							<input class="input_fechas" type="date" name="fechas">
+							<input type="checkbox" id="btn-modalFechas">
+							<label for="btn-modalFechas" class="lbl-modalFechas">Elegir fechas</label>
+							<div class="modalFechas">
+								<div class="contenedor_php">
+									<p>Seleccione las fechas</p>
+									<label for="btn-modalFechas">❎</label>
+									<form class="contenido_php" action="#" method="post">
+										<div>
+											<label for="fechaLlegada" style="position: inherit; color: black; margin-bottom: 10px;">Fecha de llegada</label>
+											<input class="fechas_php" type="date" name="fechaLlegada" id="fechaLlegada">
+										</div>
+										<div>
+											<label for="fechaSalida" style="position: inherit; color: black; margin-bottom: 10px;">Fecha de salida</label>
+											<input class="fechas_php" type="date" name="fechaSalida" id="fechaSalida">
+										</div>
+									</form>
+								</div>
+							</div>
 						</td>
 						<td style="width: 22%;">
-							<input class="input_huespedes" type="text" name="huespedes" value="Huéspedes/Habitaciones">
+							<input class="input_huespedes" type="text" name="huespedes" placeholder="Huéspedes/Habitaciones">
 						</td>
 						<td>
 							<input class="input_buscar" type="submit" name="buscar" value="Buscar">
@@ -178,4 +197,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>
