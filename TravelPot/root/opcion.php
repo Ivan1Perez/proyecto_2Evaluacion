@@ -45,6 +45,7 @@
 
                 $cantidad_no_root = $doc->getElementsByTagName('no_root')->length;
                 $items_no_root = $doc->getElementsByTagName('nombre');
+                $cantidad_hoteles = $doc->getElementsByTagName('hotel')->length;
 
                 if($mensajeDeBorrado!==null)
                     echo '<h1 style="color: green; padding: 10px; border: 1px solid green; border-radius: 4px; background-color: white; margin: 10px;">'.$mensajeDeBorrado.'</h1>';
@@ -182,6 +183,127 @@
                         echo '</fieldset>
                                 </form>
                             </div>';
+                        break;
+
+                    case 3:
+                        echo '<div id="form-container">
+                                <form class="listarForm" action="opcion.php?usuario=' . urlencode($_POST['usuario']) . '&opcion=' . urldecode($opcion) . '" method="post">
+                                    <fieldset id="fieldsetUsuarios">
+                                        <legend>Listado de hoteles</legend>
+                                        <input type="text" name="hotel" placeholder="Buscar hotel">
+                                        <input type="submit" id="envio">';
+
+                        $busquedaHotel = $_POST['hotel'];
+
+                        if (strlen($busquedaHotel) == 0) {
+                            for ($i = 1, $j = 0; $i <= $cantidad_hoteles; $i++, $j++) {
+                                echo '<div class="contenedorUsuarioBorrar"><p>Hotel ' . $i . '</p>';
+                                $nombre_hotel = $doc->getElementsByTagName('nombre_hotel')->item($j)->nodeValue;
+                                $ciudad = $doc->getElementsByTagName('ciudad')->item($j)->nodeValue;
+                                $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($j)->getAttribute('numero');
+                                $importe_habitacion = $doc->getElementsByTagName('importe_habitacion')->item($j)->nodeValue;
+                                echo '<div class="contenidoUsuarioBorrar">';
+                                echo "<p>Nombre: {$nombre_hotel}<br>Ciudad: {$ciudad}<br>Habitaciones: {$numHabitaciones}<br>Importe: {$importe_habitacion}€</p></div>";
+                                echo '</div>';
+                            }
+                        } else {
+                            $i = 0;
+                            $encontrado = false;
+
+                            while ($i < $cantidad_hoteles && !$encontrado) {
+                                $nombre_hotel = $doc->getElementsByTagName('nombre_hotel')->item($j)->nodeValue;
+                                $ciudad = $doc->getElementsByTagName('ciudad')->item($j)->nodeValue;
+                                $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($j)->getAttribute('numero');
+                                $importe_habitacion = $doc->getElementsByTagName('importe_habitacion')->item($j)->nodeValue;
+
+                                if ($nombre_hotel == $busquedaHotel) {
+                                    $encontrado = true;
+                                    echo '<div class="contenedorUsuarioBorrar"><p>Hotel ' . $i . '</p>';
+
+                                    echo '<div class="contenidoUsuarioBorrar">';
+                                    echo "<p>Nombre: {$nombre_hotel}<br>Ciudad: {$ciudad}<br>Habitaciones: {$numHabitaciones}<br>Importe: {$importe_habitacion}€</p></div>";
+                                    echo '</div>';
+                                }
+
+                                $i++;
+                            }
+
+                            if (!$encontrado) {
+                                $url = 'opcion.php?opcion=' . urlencode($opcion).'&warning='.urldecode("No existe ningún hotel con este nombre.");
+                                header("Location: " . $url);
+                                exit;
+                            }
+                        }
+
+                        echo '</fieldset>
+                                </form>
+                            </div>';
+                        break;
+
+                    case 4:
+                        echo '<div id="form-container">
+                                <form class="listarForm" action="opcion.php?usuario=' . urlencode($_POST['usuario']) . '&opcion=' . urldecode($opcion) . '" method="post">
+                                    <fieldset id="fieldsetUsuarios">
+                                        <legend>Añadir hotel</legend>
+                                        <input type="text" name="hotel" placeholder="Nombre del hotel" minlength="2" required>
+                                        <input type="text" name="ciudad" placeholder="Ciudad" minlength="2" required>
+                                        <input type="text" name="numHabitaciones" placeholder="Número de habitaciones" minlength="1" pattern="[0-9]+" oninvalid="setCustomValidity(\'Campo obligatorio. Solo se admiten números.\')" required>
+                                        <input type="text" name="importe_habitacion" placeholder="Importe de habitación" minlength="1" pattern="[0-9]+" oninvalid="setCustomValidity(\'Campo obligatorio. Solo se admiten números.\')" required>
+                                        <input type="submit" id="envioHotel" value="Añadir hotel">
+                                    </fieldset>
+                                </form>
+                            </div>';
+
+                            $busquedaHotel = $_POST['hotel'];
+
+                            $i = 0;
+                            $encontrado = false;
+
+                            if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+                                while ($i < $cantidad_hoteles && !$encontrado && strlen($busquedaHotel)>0) {
+                                    $nombre_hotel = $doc->getElementsByTagName('nombre_hotel')->item($j)->nodeValue;
+                                    $ciudad = $doc->getElementsByTagName('ciudad')->item($j)->nodeValue;
+                                    $numHabitaciones = $doc->getElementsByTagName('numHabitaciones')->item($j)->getAttribute('numero');
+                                    $importe_habitacion = $doc->getElementsByTagName('importe_habitacion')->item($j)->nodeValue;
+    
+                                    if ($nombre_hotel == $busquedaHotel) {
+                                        $encontrado = true;
+                                    }
+    
+                                    $i++;
+                                }
+    
+                                if ($encontrado) {
+                                    echo 'encontrado';
+                                }else{
+    
+                                    $hoteles = $doc->getElementsByTagName('hoteles')->item(0);
+    
+                                    $hotel = $doc->createElement('hotel');
+    
+                                    $nombre_hotel = $doc->createElement('nombre_hotel', $_POST['hotel']);
+                                    $ciudad = $doc->createElement('ciudad', $_POST['ciudad']);
+                                    $numHabitaciones = $doc->createElement('numHabitaciones');
+                                    $numHabitaciones->setAttribute('numero', $_POST['numHabitaciones']);
+                                    $importe_habitacion = $doc->createElement('importe_habitacion', $_POST['importe_habitacion']);
+    
+                                    $hotel->appendChild($nombre_hotel);
+                                    $hotel->appendChild($ciudad);
+                                    $hotel->appendChild($numHabitaciones);
+                                    $hotel->appendChild($importe_habitacion);
+    
+                                    $hoteles->appendChild($hotel);
+    
+                                    $doc->save($xml_path);
+    
+                                    $url = 'opcion.php?opcion=' . urlencode($opcion).'&mensajeDeBorrado='.urldecode("¡Hotel añadido con éxito!");
+                                    header("Location: " . $url);
+                                    exit;
+    
+                                }
+                            }
+
+                            
                         break;
                 }
 
