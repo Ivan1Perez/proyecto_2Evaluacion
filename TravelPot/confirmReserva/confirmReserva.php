@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPot.com | Official Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="full_container_datosMod">
+        <header>
+            <nav>
+                <table id="headerTable">
+                    <tr>
+                        <td style="width: 15%;">
+                            <div id="logo">
+                                <p><b>TravelPot</b></p>
+                            </div>
+                        </td>
+                        <td style="text-align: right; padding-right: 20px;">
+                            <a href="../sesionIniciada/index_esp.php?usuario=<?php echo urldecode($_GET['usuario']); ?>" class="volver">Volver a inicio</a>
+                        </td>
+                        <td style="width: 0px;">
+                            <p class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo urldecode($_GET['usuario']); ?></p>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="form-container">
+                    <form action="#" method="post">
+                        <fieldset id="fieldset-root">
+                            <legend>Confirmación</legend>
+                            <div class="datos">
+                                <?php
+                                echo '
+                                    <p>Hotel: '.$_GET['nombreHotel'].'</p>
+                                    <pl>Fecha de entrada: '.$_GET['fechaLlegada'].'</pl>
+                                    <p>Fecha de salida: '.$_GET['fechaSalida'].'</p>
+                                    <p>Importe total: '.$_GET['importe'].'€';
+                                ?>
+                            </div>
+                            <div>
+                                <a href="../sesionIniciada/nuevoHotel.php?nombreHotel=<?php echo urldecode($_GET['nombreHotel']) . '&disponible='.urldecode($_GET['disponible']).'&fechaLlegada='.urldecode($_GET['fechaLlegada']).'&fechaSalida='.urldecode($_GET['fechaSalida']).'&importe='.urldecode($_GET['importe']).'&usuario='.urldecode($_GET['usuario']);?>" class="cancelar">Cancelar ❎</a>
+                                <a href="addReserva.php?nombreHotel=<?php $disponible = false; echo urldecode($_GET['nombreHotel']) . '&disponible='.urldecode($disponible).'&fechaLlegada='.urldecode($_GET['fechaLlegada']).'&fechaSalida='.urldecode($_GET['fechaSalida']).'&importe='.urldecode($_GET['importe']).'&usuario='.urldecode($_GET['usuario']);?>" class="confirmar">Confirmar ✅</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

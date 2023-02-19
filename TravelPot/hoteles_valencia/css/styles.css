@@ -244,7 +244,7 @@ a[class*="img-hotel"]:hover{
 	font-family: sans-serif;
 }
 
-.titulo-puntuacion{
+.titulo-puntuacion, .disponible, .noDisponible{
 	width: 100px;
 	text-align: center;
 	padding: 10px;
@@ -255,12 +255,31 @@ a[class*="img-hotel"]:hover{
 	cursor: pointer;
 }
 
-.puntuacion{
+.disponible{
+	background-color: green;
+}
+
+.noDisponible{
+	background-color: red;
+	width: auto;
+	border-radius: 6px;
+	margin-right: 5px;
+}
+
+.puntuacion, .dispo_Img{
 	padding: 10px;
 	background-color: #003580;
 	border-radius: 0px 0px 6px 0px;
 	color: white;
 	cursor: pointer;
+}
+
+.dispo_Img{
+	padding: unset;
+}
+
+.noDispoImg{
+	padding: unset;
 }
 
 .puntuacion-texto {

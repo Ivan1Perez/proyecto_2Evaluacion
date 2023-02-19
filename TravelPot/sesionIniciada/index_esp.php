@@ -48,7 +48,6 @@
 							</div>
 						</td>
 						<td style="padding-right: 10px; width: 0px;">
-							<!-- Perfil -->
 							<a href="../modificarUsuario/modificar.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" class="cajaPerfil"><img src="../multimedia/user.png" class="perfil" alt="imagen-perfil"><?php echo $_GET['usuario'] ?></a>
 						</td>
 						<?php
@@ -67,7 +66,7 @@
 					</tr>
 				</table>
 			</nav>
-			<form action="busqueda.php" method="post">
+			<form action="busqueda.php?usuario=<?php echo urlencode($_GET['usuario']); ?>" method="post">
 				<table id="barra_busqueda">
 					<tr id="t_row">
 						<td style="width: 40%;">
@@ -80,16 +79,17 @@
 								<div class="contenedor_php">
 									<p>Seleccione las fechas</p>
 									<label for="btn-modalFechas">❎</label>
-									<form class="contenido_php" action="#" method="post">
+									<div class="contenido_php">
 										<div>
 											<label for="fechaLlegada" style="position: inherit; color: black; margin-bottom: 10px;">Fecha de llegada</label>
 											<input class="fechas_php" type="date" name="fechaLlegada" id="fechaLlegada">
+											
 										</div>
 										<div>
 											<label for="fechaSalida" style="position: inherit; color: black; margin-bottom: 10px;">Fecha de salida</label>
 											<input class="fechas_php" type="date" name="fechaSalida" id="fechaSalida">
 										</div>
-									</form>
+									</div>
 								</div>
 							</div>
 						</td>

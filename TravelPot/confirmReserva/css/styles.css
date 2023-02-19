@@ -1,0 +1,167 @@
+@font-face {
+	font-family: 'Pacifico-Regular';
+	src: url('../../fuentes/Pacifico/Pacifico-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Playfair_Display';
+	src: url('../../fuentes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../../fuentes/Montserrat-VariableFont_wght.ttf')  format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meddon&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../../imagenes/plane.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+#full_container_datosMod, #full_containerOpcionesRoot{
+    padding-left: 100px;
+    padding-right: 100px;
+    width: calc(100vw -200px);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#full_containerOpcionesRoot{
+    width: auto;
+    height: unset;
+    padding-bottom: 100px
+}
+
+header {
+    /* z-index: 1; */
+    position: relative;
+}
+
+#headerTable {
+    width: 100%;
+    margin: 0px auto;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+#logo {
+    color: white;
+    font-size: 2.8vw;
+}
+
+#logo>p {
+    font-family: 'Pacifico-Regular';
+}
+
+#logo>img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.volver {
+    background-color: #0071c2;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px 0px 4px 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-shadow: inset 2px 2px 0px white, inset -2px -2px 0px #ffffff85;
+    transition: all 50ms;
+}
+
+.volver:hover {
+    background-color: white;
+    border: 2px solid #0071c2;
+    padding: 12px 22px;
+    color: #0071c2;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.cajaPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 41px;
+    background-color: white;
+    border: 1px solid #0071c2;
+    padding: 0 10px;
+    color: #0071c2;
+    font-family: sans-serif;
+    border-radius: 4px;
+}
+
+.perfil {
+    position: relative;
+    display: block;
+    left: 0px;
+    padding-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#form-container {
+    width: auto;
+}
+
+form, .listarForm {
+    background: #000000bd;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+fieldset {
+    min-width: 500px;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    padding: 15px;
+}
+
+fieldset input {
+    width: calc(90% - 10px);
+}
+
+.confirmar, .cancelar {
+	background-color: #0071c2;
+	text-decoration: none;
+	border-radius: 3px;
+	color: white;
+	padding: 7px 17px;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+.cancelar{
+    background-color: red;
+}
+
+.datos{
+    border: 1px solid white;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans;
+    padding: 10px;
+    margin-bottom: 20px;
+}

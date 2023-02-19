@@ -458,10 +458,14 @@ div[class*="puntuacion"]{
 	cursor: pointer;
 }
 
-.titulo-puntuacion{
+.titulo-puntuacion, .disponible{
 	width: 100px;
 	background-color: #0071c2;
 	border-radius: 6px 0px 0px 6px;
+}
+
+.disponible{
+	background-color: green;
 }
 
 .puntuacion{

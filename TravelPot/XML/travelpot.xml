@@ -21,7 +21,8 @@
 <!ELEMENT importe_habitacion (#PCDATA)>
 <!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT reservas (reserva*)>
-<!ELEMENT reserva (nombre_hotel, dia_entrada, dia_salida, nombre_reserva, importe_reserva)>
+<!ELEMENT reserva (nombre_hotelReserva, dia_entrada, dia_salida, nombre_reserva, importe_reserva)>
+<!ELEMENT nombre_hotelReserva (#PCDATA)>
 <!ELEMENT dia_entrada (#PCDATA)>
 <!ELEMENT dia_salida (#PCDATA)>
 <!ELEMENT nombre_reserva (#PCDATA)>
@@ -153,9 +154,9 @@
     </hoteles>
     <reservas>
         <reserva>
-            <nombre_hotel></nombre_hotel>
-            <dia_entrada></dia_entrada>
-            <dia_salida></dia_salida>
+            <nombre_hotelReserva>Ad Hoc Monumental 1881 ⭐ ⭐ ⭐</nombre_hotelReserva>
+            <dia_entrada>2023-02-19</dia_entrada>
+            <dia_salida>2023-02-23</dia_salida>
             <nombre_reserva></nombre_reserva>
             <importe_reserva></importe_reserva>
         </reserva>

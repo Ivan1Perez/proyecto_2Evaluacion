@@ -55,41 +55,43 @@
 					</tr>
 				</table>
 			</nav>
-			<table id="barra_busqueda">
-				<tr id="t_row">
-					<td style="width: 40%;">
-						<input class="input_destino" type="text" name="destino" placeholder="Choose destination">
-					</td>
-					<td style="width: 22%;">
-						<input type="checkbox" id="btn-modalFechas">
-						<label for="btn-modalFechas" class="lbl-modalFechas">Choose dates</label>
-						<div class="modalFechas">
-							<div class="contenedor_php">
-								<p>Choose dates</p>
-								<label for="btn-modalFechas">❎</label>
-								<form class="contenido_php" action="#" method="post">
-									<div>
-										<label for="fechaLlegada" style="position: inherit; color: black; margin-bottom: 10px;">Arrival date</label>
-										<input class="fechas_php" type="date" name="fechaLlegada" id="fechaLlegada">
+			<form action="busqueda.php" method="post">
+				<table id="barra_busqueda">
+					<tr id="t_row">
+						<td style="width: 40%;">
+							<input class="input_destino" type="text" name="destino" placeholder="Choose destination">
+						</td>
+						<td style="width: 22%;">
+							<input type="checkbox" id="btn-modalFechas">
+							<label for="btn-modalFechas" class="lbl-modalFechas">Choose dates</label>
+							<div class="modalFechas">
+								<div class="contenedor_php">
+									<p>Choose dates</p>
+									<label for="btn-modalFechas">❎</label>
+									<div class="contenido_php">
+										<div>
+											<label for="fechaLlegada" style="position: inherit; color: black; margin-bottom: 10px;">Arrival date</label>
+											<input class="fechas_php" type="date" name="fechaLlegada" id="fechaLlegada">
+										</div>
+										<div>
+											<label for="fechaSalida" style="position: inherit; color: black; margin-bottom: 10px;">Departure date</label>
+											<input class="fechas_php" type="date" name="fechaSalida" id="fechaSalida">										
+										</div>
 									</div>
-									<div>
-										<label for="fechaSalida" style="position: inherit; color: black; margin-bottom: 10px;">Departure date</label>
-										<input class="fechas_php" type="date" name="fechaSalida" id="fechaSalida">										
-									</div>
-								</form>
+								</div>
 							</div>
-						</div>
-					</td>
-					<td style="width: 22%;">
-						<input class="input_huespedes" type="text" name="huespedes" placeholder="Guests/Rooms">
-					</td>
-					<td>
-						<form action="#">
-							<input class="input_buscar" type="submit" name="buscar" value="Search">
-						</form>
-					</td>
-				</tr>
-			</table>
+						</td>
+						<td style="width: 22%;">
+							<input class="input_huespedes" type="text" name="huespedes" placeholder="Guests/Rooms">
+						</td>
+						<td>
+							<form action="#">
+								<input class="input_buscar" type="submit" name="buscar" value="Search">
+							</form>
+						</td>
+					</tr>
+				</table>
+			</form>
 		</header>
 		<main>
 			<div id="destinos">
