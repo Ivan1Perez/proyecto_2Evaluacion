@@ -27,6 +27,7 @@ body{
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	min-width: 1280px; /*para exponer*/
 }
 
 header{
@@ -334,6 +335,51 @@ a[class*="img-hotel"]:hover{
 	visibility: visible;
 }
 
+#btn-modal4:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal5:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal6:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal7:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal8:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal9:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal10:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal11:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
+#btn-modal12:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+
 .contenedor {
 	height: 105px;
 	margin: auto;
@@ -353,6 +399,41 @@ a[class*="img-hotel"]:hover{
 }
 
 #btn-modal3:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal4:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal5:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal6:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal7:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal8:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal9:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+#btn-modal10:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal11:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+#btn-modal12:checked ~ .modal .contenedor{
 	transform: translateY(0%);
 }
 
@@ -382,6 +463,42 @@ a[class*="img-hotel"]:hover{
 }
 
 #btn-modal3{
+	display: none;
+}
+
+#btn-modal4{
+	display: none;
+}
+
+#btn-modal5{
+	display: none;
+}
+
+#btn-modal6{
+	display: none;
+}
+
+#btn-modal7{
+	display: none;
+}
+
+#btn-modal8{
+	display: none;
+}
+
+#btn-modal9{
+	display: none;
+}
+
+#btn-modal10{
+	display: none;
+}
+
+#btn-modal11{
+	display: none;
+}
+
+#btn-modal12{
 	display: none;
 }
 

@@ -24,9 +24,9 @@
 
 body {
     background-image: url('../../imagenes/settings.jpg');
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: 0px -250px;
+    /* background-position: 0px -250px; */
     background-attachment: fixed;
 }
 
