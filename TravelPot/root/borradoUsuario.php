@@ -1,5 +1,5 @@
 <?php
-$url = 'opcion.php?opcion=2&mensajeDeBorrado=Usuario eliminado con éxito.';
+$url = 'opcion.php?opcion=2&mensaje=Usuario eliminado con éxito.';
 
 $item_no_root = $_GET['numero'];
 

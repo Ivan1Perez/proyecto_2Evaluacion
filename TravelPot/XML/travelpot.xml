@@ -157,8 +157,8 @@
             <nombre_hotelReserva>Ad Hoc Monumental 1881 ⭐ ⭐ ⭐</nombre_hotelReserva>
             <dia_entrada>2023-02-19</dia_entrada>
             <dia_salida>2023-02-23</dia_salida>
-            <nombre_reserva></nombre_reserva>
-            <importe_reserva></importe_reserva>
+            <nombre_reserva>Test1Usuario</nombre_reserva>
+            <importe_reserva>60</importe_reserva>
         </reserva>
     </reservas>
 </travelpot>
