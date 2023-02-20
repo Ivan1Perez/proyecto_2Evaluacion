@@ -94,6 +94,8 @@ if (strlen($destino) == 0) {
         $importe_habitacion = $doc->getElementsByTagName('importe_habitacion')->item($i)->nodeValue;
         $descripcion = $doc->getElementsByTagName('descripcion')->item($i)->nodeValue;
         $link_img = $doc->getElementsByTagName('link_img')->item($i)->getAttribute('link');
+        if(strlen($link_img)==0)
+            $link_img = "../imagenes/hotel_vlc2.webp";
 
         if ($numHotel == 1){
             echo '<div id="enunciado">
@@ -121,7 +123,7 @@ if (strlen($destino) == 0) {
         <div id="contenedor-hoteles">
             <div class="contenido-hoteles">
                 <a href="nuevoHotel.php?nombreHotel=' . urldecode($nombreHotel) . '&disponible='.urldecode($disponible).'&fechaLlegada='.urldecode($fechaLlegadaPost).'&fechaSalida='.urldecode($fechaSalidaPost).'&importe='.urldecode($importe_habitacion).'&usuario='.urldecode($_GET['usuario']).'">
-                    <img src="'.$link_img.'" alt="icono-corazon" class="img-php">
+                    <img src="'.$link_img.'" alt="img-hotel" class="img-php">
                 </a>
                 <div class="descripcion-hoteles">
                     <a href="nuevoHotel.php?nombreHotel=' . urldecode($nombreHotel) . '&disponible='.urldecode($disponible).'&fechaLlegada='.urldecode($fechaLlegadaPost).'&fechaSalida='.urldecode($fechaSalidaPost).'&importe='.urldecode($importe_habitacion).'&usuario='.urldecode($_GET['usuario']).'" style="text-decoration: none;"><h2>' . $nombreHotel . '</h2></a>

@@ -297,12 +297,14 @@
                                     $numHabitaciones->setAttribute('numero', $_POST['numHabitaciones']);
                                     $importe_habitacion = $doc->createElement('importe_habitacion', $_POST['importe_habitacion']);
                                     $descripcion = $doc->createElement('descripcion', $_POST['descripcion']);
+                                    $link_img = $doc->createElement('link_img', '../imagenes/hotel_vlc2.webp');
     
                                     $hotel->appendChild($nombre_hotel);
                                     $hotel->appendChild($ciudad);
                                     $hotel->appendChild($numHabitaciones);
                                     $hotel->appendChild($importe_habitacion);
                                     $hotel->appendChild($descripcion);
+                                    $hotel->appendChild($link_img);
     
                                     $hoteles->appendChild($hotel);
     
