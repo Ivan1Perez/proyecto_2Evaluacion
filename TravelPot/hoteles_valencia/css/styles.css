@@ -196,6 +196,15 @@ a[class*="img-hotel"]:hover{
 	box-shadow: 2px 2px 4px #0000ffb3, -2px -2px 4px #0000ffb3;
 }
 
+.img-php{
+	border-radius: 6px;
+	transition: all 200ms;
+}
+
+.img-php:hover{
+	box-shadow: 2px 2px 4px #0000ffb3, -2px -2px 4px #0000ffb3;
+}
+
 .corazon{
 	width: 35px;
 	margin: 5px;
